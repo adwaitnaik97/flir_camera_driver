@@ -1,8 +1,0 @@
-[Desktop Entry] 
-Encoding=UTF-8
-Name=SpinView
-Exec=/opt/spinnaker/bin/spinview
-Icon=/usr/share/pixmaps/spinview-qt.ico
-Terminal=false
-Type=Application
-StartupNotify=false
