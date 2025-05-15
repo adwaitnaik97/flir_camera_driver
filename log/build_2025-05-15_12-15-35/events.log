@@ -1,0 +1,1610 @@
+[0.000000] (-) TimerEvent: {}
+[0.000280] (flir_camera_description) JobQueued: {'identifier': 'flir_camera_description', 'dependencies': OrderedDict()}
+[0.000323] (flir_camera_msgs) JobQueued: {'identifier': 'flir_camera_msgs', 'dependencies': OrderedDict()}
+[0.000347] (spinnaker_camera_driver) JobQueued: {'identifier': 'spinnaker_camera_driver', 'dependencies': OrderedDict([('flir_camera_msgs', '/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs')])}
+[0.000373] (spinnaker_synchronized_camera_driver) JobQueued: {'identifier': 'spinnaker_synchronized_camera_driver', 'dependencies': OrderedDict([('flir_camera_msgs', '/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs'), ('spinnaker_camera_driver', '/home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver')])}
+[0.000399] (flir_camera_msgs) JobStarted: {'identifier': 'flir_camera_msgs'}
+[0.003333] (flir_camera_description) JobStarted: {'identifier': 'flir_camera_description'}
+[0.006389] (flir_camera_msgs) JobProgress: {'identifier': 'flir_camera_msgs', 'progress': 'cmake'}
+[0.006859] (flir_camera_msgs) Command: {'cmd': ['/usr/local/bin/cmake', '/home/adwait/workspace/flir_camera_driver/flir_camera_msgs', '-DCMAKE_INSTALL_PREFIX=/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs'], 'cwd': '/home/adwait/workspace/flir_camera_driver/build/flir_camera_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'adwait'), ('GIT_ASKPASS', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/adwait'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-272f4eac-cdd5-418f-b098-0d1263343e37.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'adwait'), ('NAME', 'DESKTOP-34LQD19'), ('WSL_INTEROP', '/run/WSL/80285_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Incredibuild:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/adwai/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/adwai/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/adwai/.dotnet/tools:/mnt/c/Users/adwai/AppData/Local/GitHubDesktop/bin:/snap/bin:/home/adwait/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('ARENA_ROOT', '/opt/ArenaSDK_v0.1.68_Linux_x64/ArenaSDK_Linux_x64/'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6ee8dfea5a.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/adwait/workspace/flir_camera_driver/build/flir_camera_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.010081] (flir_camera_description) JobProgress: {'identifier': 'flir_camera_description', 'progress': 'cmake'}
+[0.010572] (flir_camera_description) Command: {'cmd': ['/usr/local/bin/cmake', '/home/adwait/workspace/flir_camera_driver/flir_camera_description', '-DCMAKE_INSTALL_PREFIX=/home/adwait/workspace/flir_camera_driver/install/flir_camera_description'], 'cwd': '/home/adwait/workspace/flir_camera_driver/build/flir_camera_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'adwait'), ('GIT_ASKPASS', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/adwait'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-272f4eac-cdd5-418f-b098-0d1263343e37.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'adwait'), ('NAME', 'DESKTOP-34LQD19'), ('WSL_INTEROP', '/run/WSL/80285_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Incredibuild:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/adwai/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/adwai/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/adwai/.dotnet/tools:/mnt/c/Users/adwai/AppData/Local/GitHubDesktop/bin:/snap/bin:/home/adwait/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('ARENA_ROOT', '/opt/ArenaSDK_v0.1.68_Linux_x64/ArenaSDK_Linux_x64/'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6ee8dfea5a.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/adwait/workspace/flir_camera_driver/build/flir_camera_description'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.021511] (flir_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.021692] (flir_camera_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.093273] (flir_camera_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.093552] (flir_camera_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.099114] (-) TimerEvent: {}
+[0.168628] (flir_camera_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.168775] (flir_camera_description) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.199213] (-) TimerEvent: {}
+[0.225249] (flir_camera_description) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.226899] (flir_camera_description) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.227662] (flir_camera_description) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.228328] (flir_camera_description) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.229241] (flir_camera_description) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.230365] (flir_camera_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.232467] (flir_camera_description) StdoutLine: {'line': b'-- Generating done\n'}
+[0.234000] (flir_camera_description) StdoutLine: {'line': b'-- Build files have been written to: /home/adwait/workspace/flir_camera_driver/build/flir_camera_description\n'}
+[0.235494] (flir_camera_description) CommandEnded: {'returncode': 0}
+[0.236804] (flir_camera_description) JobProgress: {'identifier': 'flir_camera_description', 'progress': 'build'}
+[0.237044] (flir_camera_description) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/adwait/workspace/flir_camera_driver/build/flir_camera_description', '--', '-j20', '-l20'], 'cwd': '/home/adwait/workspace/flir_camera_driver/build/flir_camera_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'adwait'), ('GIT_ASKPASS', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/adwait'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-272f4eac-cdd5-418f-b098-0d1263343e37.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'adwait'), ('NAME', 'DESKTOP-34LQD19'), ('WSL_INTEROP', '/run/WSL/80285_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Incredibuild:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/adwai/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/adwai/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/adwai/.dotnet/tools:/mnt/c/Users/adwai/AppData/Local/GitHubDesktop/bin:/snap/bin:/home/adwait/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('ARENA_ROOT', '/opt/ArenaSDK_v0.1.68_Linux_x64/ArenaSDK_Linux_x64/'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6ee8dfea5a.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/adwait/workspace/flir_camera_driver/build/flir_camera_description'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.247038] (flir_camera_description) CommandEnded: {'returncode': 0}
+[0.247944] (flir_camera_description) JobProgress: {'identifier': 'flir_camera_description', 'progress': 'install'}
+[0.250425] (flir_camera_description) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/adwait/workspace/flir_camera_driver/build/flir_camera_description'], 'cwd': '/home/adwait/workspace/flir_camera_driver/build/flir_camera_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'adwait'), ('GIT_ASKPASS', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/adwait'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-272f4eac-cdd5-418f-b098-0d1263343e37.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'adwait'), ('NAME', 'DESKTOP-34LQD19'), ('WSL_INTEROP', '/run/WSL/80285_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Incredibuild:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/adwai/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/adwai/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/adwai/.dotnet/tools:/mnt/c/Users/adwai/AppData/Local/GitHubDesktop/bin:/snap/bin:/home/adwait/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('ARENA_ROOT', '/opt/ArenaSDK_v0.1.68_Linux_x64/ArenaSDK_Linux_x64/'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6ee8dfea5a.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/adwait/workspace/flir_camera_driver/build/flir_camera_description'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.252239] (flir_camera_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.252342] (flir_camera_description) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_description/share/flir_camera_description/launch\n'}
+[0.253540] (flir_camera_description) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_description/share/flir_camera_description/launch/demo.launch.py\n'}
+[0.253905] (flir_camera_description) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_description/share/flir_camera_description/meshes\n'}
+[0.254102] (flir_camera_description) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_description/share/flir_camera_description/meshes/flir_blackfly_s.stl\n'}
+[0.255252] (flir_camera_description) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_description/share/flir_camera_description/urdf\n'}
+[0.255508] (flir_camera_description) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_description/share/flir_camera_description/urdf/demo.urdf.xacro\n'}
+[0.255757] (flir_camera_description) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_description/share/flir_camera_description/urdf/flir_blackfly_s.urdf.xacro\n'}
+[0.256589] (flir_camera_description) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_description/share/ament_index/resource_index/package_run_dependencies/flir_camera_description\n'}
+[0.256775] (flir_camera_description) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_description/share/ament_index/resource_index/parent_prefix_path/flir_camera_description\n'}
+[0.256922] (flir_camera_description) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_description/share/flir_camera_description/environment/ament_prefix_path.sh\n'}
+[0.257009] (flir_camera_description) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_description/share/flir_camera_description/environment/ament_prefix_path.dsv\n'}
+[0.257047] (flir_camera_description) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_description/share/flir_camera_description/environment/path.sh\n'}
+[0.257162] (flir_camera_description) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_description/share/flir_camera_description/environment/path.dsv\n'}
+[0.257199] (flir_camera_description) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_description/share/flir_camera_description/local_setup.bash\n'}
+[0.257344] (flir_camera_description) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_description/share/flir_camera_description/local_setup.sh\n'}
+[0.257391] (flir_camera_description) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_description/share/flir_camera_description/local_setup.zsh\n'}
+[0.257478] (flir_camera_description) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_description/share/flir_camera_description/local_setup.dsv\n'}
+[0.257639] (flir_camera_description) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_description/share/flir_camera_description/package.dsv\n'}
+[0.257771] (flir_camera_description) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_description/share/ament_index/resource_index/packages/flir_camera_description\n'}
+[0.258014] (flir_camera_description) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_description/share/flir_camera_description/cmake/flir_camera_descriptionConfig.cmake\n'}
+[0.258100] (flir_camera_description) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_description/share/flir_camera_description/cmake/flir_camera_descriptionConfig-version.cmake\n'}
+[0.258215] (flir_camera_description) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_description/share/flir_camera_description/package.xml\n'}
+[0.259038] (flir_camera_description) CommandEnded: {'returncode': 0}
+[0.269809] (flir_camera_description) JobEnded: {'identifier': 'flir_camera_description', 'rc': 0}
+[0.299343] (-) TimerEvent: {}
+[0.399756] (-) TimerEvent: {}
+[0.464092] (flir_camera_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.473182] (flir_camera_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.490322] (flir_camera_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.499930] (-) TimerEvent: {}
+[0.511221] (flir_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.527983] (flir_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.542137] (flir_camera_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.551107] (flir_camera_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.8.0 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.600044] (-) TimerEvent: {}
+[0.689708] (flir_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.12.12 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)\n'}
+[0.690855] (flir_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.12.12 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)\n'}
+[0.692012] (flir_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.12.12 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)\n'}
+[0.694552] (flir_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.700101] (-) TimerEvent: {}
+[0.800404] (-) TimerEvent: {}
+[0.829995] (flir_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.878690] (flir_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.900676] (-) TimerEvent: {}
+[1.001087] (-) TimerEvent: {}
+[1.082134] (flir_camera_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.085645] (flir_camera_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.101181] (-) TimerEvent: {}
+[1.201513] (-) TimerEvent: {}
+[1.301972] (-) TimerEvent: {}
+[1.402418] (-) TimerEvent: {}
+[1.502908] (-) TimerEvent: {}
+[1.603323] (-) TimerEvent: {}
+[1.623263] (flir_camera_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.623430] (flir_camera_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.623467] (flir_camera_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.623497] (flir_camera_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.636412] (flir_camera_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.703465] (-) TimerEvent: {}
+[1.803919] (-) TimerEvent: {}
+[1.821908] (flir_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.12.12 (/opt/ros/humble/share/ament_cmake_flake8/cmake)\n'}
+[1.823005] (flir_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.12.12 (/opt/ros/humble/share/ament_cmake_pep257/cmake)\n'}
+[1.824641] (flir_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_copyright: 0.12.12 (/opt/ros/humble/share/ament_cmake_copyright/cmake)\n'}
+[1.825699] (flir_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_lint_cmake: 0.12.12 (/opt/ros/humble/share/ament_cmake_lint_cmake/cmake)\n'}
+[1.826526] (flir_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_xmllint: 0.12.12 (/opt/ros/humble/share/ament_cmake_xmllint/cmake)\n'}
+[1.841741] (flir_camera_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.871571] (flir_camera_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.879197] (flir_camera_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/adwait/workspace/flir_camera_driver/build/flir_camera_msgs\n'}
+[1.884398] (flir_camera_msgs) CommandEnded: {'returncode': 0}
+[1.885482] (flir_camera_msgs) JobProgress: {'identifier': 'flir_camera_msgs', 'progress': 'build'}
+[1.885515] (flir_camera_msgs) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/adwait/workspace/flir_camera_driver/build/flir_camera_msgs', '--', '-j20', '-l20'], 'cwd': '/home/adwait/workspace/flir_camera_driver/build/flir_camera_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'adwait'), ('GIT_ASKPASS', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/adwait'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-272f4eac-cdd5-418f-b098-0d1263343e37.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'adwait'), ('NAME', 'DESKTOP-34LQD19'), ('WSL_INTEROP', '/run/WSL/80285_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Incredibuild:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/adwai/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/adwai/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/adwai/.dotnet/tools:/mnt/c/Users/adwai/AppData/Local/GitHubDesktop/bin:/snap/bin:/home/adwait/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('ARENA_ROOT', '/opt/ArenaSDK_v0.1.68_Linux_x64/ArenaSDK_Linux_x64/'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6ee8dfea5a.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/adwait/workspace/flir_camera_driver/build/flir_camera_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.897586] (flir_camera_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.900492] (flir_camera_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.902408] (flir_camera_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_flir_camera_msgs\n'}
+[1.903972] (-) TimerEvent: {}
+[2.004369] (-) TimerEvent: {}
+[2.039043] (flir_camera_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.039465] (flir_camera_msgs) StdoutLine: {'line': b'creating flir_camera_msgs.egg-info\n'}
+[2.039751] (flir_camera_msgs) StdoutLine: {'line': b'writing flir_camera_msgs.egg-info/PKG-INFO\n'}
+[2.039924] (flir_camera_msgs) StdoutLine: {'line': b'writing dependency_links to flir_camera_msgs.egg-info/dependency_links.txt\n'}
+[2.040004] (flir_camera_msgs) StdoutLine: {'line': b'writing top-level names to flir_camera_msgs.egg-info/top_level.txt\n'}
+[2.040175] (flir_camera_msgs) StdoutLine: {'line': b"writing manifest file 'flir_camera_msgs.egg-info/SOURCES.txt'\n"}
+[2.042455] (flir_camera_msgs) StdoutLine: {'line': b"reading manifest file 'flir_camera_msgs.egg-info/SOURCES.txt'\n"}
+[2.042685] (flir_camera_msgs) StdoutLine: {'line': b"writing manifest file 'flir_camera_msgs.egg-info/SOURCES.txt'\n"}
+[2.058045] (flir_camera_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_flir_camera_msgs_egg\n'}
+[2.104425] (-) TimerEvent: {}
+[2.110914] (flir_camera_msgs) StdoutLine: {'line': b'[  5%] Built target flir_camera_msgs__cpp\n'}
+[2.114592] (flir_camera_msgs) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.115104] (flir_camera_msgs) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.115700] (flir_camera_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.117082] (flir_camera_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/flir_camera_msgs/msg/detail/image_meta_data__functions.c.o\x1b[0m\n'}
+[2.119612] (flir_camera_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/flir_camera_msgs/msg/detail/camera_control__functions.c.o\x1b[0m\n'}
+[2.166200] (flir_camera_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libflir_camera_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[2.204481] (-) TimerEvent: {}
+[2.240035] (flir_camera_msgs) StdoutLine: {'line': b'[ 20%] Built target flir_camera_msgs__rosidl_generator_c\n'}
+[2.243265] (flir_camera_msgs) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.243569] (flir_camera_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.244108] (flir_camera_msgs) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.302236] (flir_camera_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/flir_camera_msgs/msg/image_meta_data__type_support.cpp.o\x1b[0m\n'}
+[2.302776] (flir_camera_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/flir_camera_msgs/msg/camera_control__type_support.cpp.o\x1b[0m\n'}
+[2.304574] (-) TimerEvent: {}
+[2.306824] (flir_camera_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/flir_camera_msgs/msg/detail/image_meta_data__type_support.cpp.o\x1b[0m\n'}
+[2.307039] (flir_camera_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/flir_camera_msgs/msg/detail/camera_control__type_support.cpp.o\x1b[0m\n'}
+[2.331355] (flir_camera_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/flir_camera_msgs/msg/detail/dds_fastrtps/image_meta_data__type_support.cpp.o\x1b[0m\n'}
+[2.331738] (flir_camera_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/flir_camera_msgs/msg/detail/dds_fastrtps/camera_control__type_support.cpp.o\x1b[0m\n'}
+[2.404730] (-) TimerEvent: {}
+[2.460964] (flir_camera_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/flir_camera_msgs/msg/detail/image_meta_data__type_support_c.cpp.o\x1b[0m\n'}
+[2.461535] (flir_camera_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/flir_camera_msgs/msg/detail/camera_control__type_support_c.cpp.o\x1b[0m\n'}
+[2.500674] (flir_camera_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/flir_camera_msgs/msg/detail/camera_control__type_support.c.o\x1b[0m\n'}
+[2.501041] (flir_camera_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/flir_camera_msgs/msg/detail/image_meta_data__type_support.c.o\x1b[0m\n'}
+[2.504866] (-) TimerEvent: {}
+[2.507078] (flir_camera_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/flir_camera_msgs/msg/image_meta_data__type_support.cpp.o\x1b[0m\n'}
+[2.507492] (flir_camera_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/flir_camera_msgs/msg/camera_control__type_support.cpp.o\x1b[0m\n'}
+[2.526897] (flir_camera_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libflir_camera_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.532982] (flir_camera_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libflir_camera_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.561440] (flir_camera_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libflir_camera_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.588440] (flir_camera_msgs) StdoutLine: {'line': b'[ 66%] Built target flir_camera_msgs__rosidl_typesupport_introspection_c\n'}
+[2.602520] (flir_camera_msgs) StdoutLine: {'line': b'[ 66%] Built target flir_camera_msgs__rosidl_typesupport_c\n'}
+[2.604953] (-) TimerEvent: {}
+[2.639276] (flir_camera_msgs) StdoutLine: {'line': b'[ 66%] Built target flir_camera_msgs__rosidl_typesupport_cpp\n'}
+[2.651458] (flir_camera_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libflir_camera_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.652407] (flir_camera_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libflir_camera_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.691920] (flir_camera_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libflir_camera_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.705032] (-) TimerEvent: {}
+[2.720692] (flir_camera_msgs) StdoutLine: {'line': b'[ 74%] Built target flir_camera_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.733233] (flir_camera_msgs) StdoutLine: {'line': b'[ 74%] Built target flir_camera_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[2.776505] (flir_camera_msgs) StdoutLine: {'line': b'[ 74%] Built target flir_camera_msgs__rosidl_typesupport_fastrtps_c\n'}
+[2.782450] (flir_camera_msgs) StdoutLine: {'line': b'[ 74%] Built target flir_camera_msgs\n'}
+[2.788423] (flir_camera_msgs) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.805223] (-) TimerEvent: {}
+[2.905454] (-) TimerEvent: {}
+[3.005749] (-) TimerEvent: {}
+[3.079233] (flir_camera_msgs) StdoutLine: {'line': b'[ 76%] Built target flir_camera_msgs__py\n'}
+[3.085510] (flir_camera_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/flir_camera_msgs/msg/_image_meta_data_s.c.o\x1b[0m\n'}
+[3.085680] (flir_camera_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/flir_camera_msgs/msg/_camera_control_s.c.o\x1b[0m\n'}
+[3.105859] (-) TimerEvent: {}
+[3.174626] (flir_camera_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/flir_camera_msgs/libflir_camera_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[3.205999] (-) TimerEvent: {}
+[3.306445] (-) TimerEvent: {}
+[3.406989] (-) TimerEvent: {}
+[3.507473] (-) TimerEvent: {}
+[3.542419] (flir_camera_msgs) StdoutLine: {'line': b'[ 84%] Built target flir_camera_msgs__rosidl_generator_py\n'}
+[3.548460] (flir_camera_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/flir_camera_msgs/_flir_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[3.548691] (flir_camera_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/flir_camera_msgs/_flir_camera_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[3.548743] (flir_camera_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/flir_camera_msgs/_flir_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[3.603322] (flir_camera_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.603766] (flir_camera_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.607521] (-) TimerEvent: {}
+[3.609031] (flir_camera_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.655280] (flir_camera_msgs) StdoutLine: {'line': b'[100%] Built target flir_camera_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[3.655467] (flir_camera_msgs) StdoutLine: {'line': b'[100%] Built target flir_camera_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.674512] (flir_camera_msgs) StdoutLine: {'line': b'[100%] Built target flir_camera_msgs__rosidl_typesupport_c__pyext\n'}
+[3.678682] (flir_camera_msgs) CommandEnded: {'returncode': 0}
+[3.679872] (flir_camera_msgs) JobProgress: {'identifier': 'flir_camera_msgs', 'progress': 'install'}
+[3.679932] (flir_camera_msgs) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/adwait/workspace/flir_camera_driver/build/flir_camera_msgs'], 'cwd': '/home/adwait/workspace/flir_camera_driver/build/flir_camera_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'adwait'), ('GIT_ASKPASS', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/adwait'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-272f4eac-cdd5-418f-b098-0d1263343e37.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'adwait'), ('NAME', 'DESKTOP-34LQD19'), ('WSL_INTEROP', '/run/WSL/80285_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Incredibuild:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/adwai/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/adwai/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/adwai/.dotnet/tools:/mnt/c/Users/adwai/AppData/Local/GitHubDesktop/bin:/snap/bin:/home/adwait/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('ARENA_ROOT', '/opt/ArenaSDK_v0.1.68_Linux_x64/ArenaSDK_Linux_x64/'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6ee8dfea5a.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/adwait/workspace/flir_camera_driver/build/flir_camera_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.682384] (flir_camera_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.682844] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/ament_index/resource_index/rosidl_interfaces/flir_camera_msgs\n'}
+[3.682929] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs\n'}
+[3.683097] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg\n'}
+[3.683302] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.683503] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/camera_control.h\n'}
+[3.683633] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail\n'}
+[3.683732] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__functions.h\n'}
+[3.683767] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__functions.c\n'}
+[3.683796] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__functions.h\n'}
+[3.683822] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__type_support.h\n'}
+[3.683848] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__type_support.h\n'}
+[3.683877] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__struct.h\n'}
+[3.683902] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__functions.c\n'}
+[3.683987] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__struct.h\n'}
+[3.684070] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/image_meta_data.h\n'}
+[3.684218] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/environment/library_path.sh\n'}
+[3.684270] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/environment/library_path.dsv\n'}
+[3.684303] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_generator_c.so\n'}
+[3.684408] (flir_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_generator_c.so" to ""\n'}
+[3.684448] (flir_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs\n'}
+[3.684481] (flir_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg\n'}
+[3.684509] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.684595] (flir_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail\n'}
+[3.684682] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__rosidl_typesupport_fastrtps_c.h\n'}
+[3.684856] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__rosidl_typesupport_fastrtps_c.h\n'}
+[3.684919] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[3.685040] (flir_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[3.685131] (flir_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs\n'}
+[3.685221] (flir_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg\n'}
+[3.685310] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/image_meta_data.hpp\n'}
+[3.685398] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/camera_control.hpp\n'}
+[3.685612] (flir_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail\n'}
+[3.685733] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__type_support.hpp\n'}
+[3.685822] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__struct.hpp\n'}
+[3.685907] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__traits.hpp\n'}
+[3.685993] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__struct.hpp\n'}
+[3.686142] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__builder.hpp\n'}
+[3.686245] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__type_support.hpp\n'}
+[3.686321] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__traits.hpp\n'}
+[3.686407] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__builder.hpp\n'}
+[3.686492] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[3.686576] (flir_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs\n'}
+[3.686661] (flir_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg\n'}
+[3.686745] (flir_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail\n'}
+[3.686831] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/dds_fastrtps\n'}
+[3.686917] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.687009] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.687095] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.687182] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.687270] (flir_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[3.687358] (flir_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs\n'}
+[3.687447] (flir_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg\n'}
+[3.687538] (flir_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail\n'}
+[3.687627] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__type_support.c\n'}
+[3.687814] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__rosidl_typesupport_introspection_c.h\n'}
+[3.687861] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__rosidl_typesupport_introspection_c.h\n'}
+[3.687904] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__type_support.c\n'}
+[3.687933] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.687963] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_introspection_c.so\n'}
+[3.687991] (flir_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[3.688020] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_c.so\n'}
+[3.688049] (flir_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_c.so" to ""\n'}
+[3.688141] (flir_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs\n'}
+[3.688231] (flir_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg\n'}
+[3.688320] (flir_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail\n'}
+[3.688408] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__type_support.cpp\n'}
+[3.688516] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__type_support.cpp\n'}
+[3.688606] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.688695] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.688827] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[3.688905] (flir_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[3.688992] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_cpp.so\n'}
+[3.689079] (flir_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[3.689169] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/environment/pythonpath.sh\n'}
+[3.689256] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/environment/pythonpath.dsv\n'}
+[3.689347] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs-2.0.8-py3.10.egg-info\n'}
+[3.689441] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs-2.0.8-py3.10.egg-info/top_level.txt\n'}
+[3.689534] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs-2.0.8-py3.10.egg-info/SOURCES.txt\n'}
+[3.689589] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs-2.0.8-py3.10.egg-info/PKG-INFO\n'}
+[3.689621] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs-2.0.8-py3.10.egg-info/dependency_links.txt\n'}
+[3.689656] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs\n'}
+[3.689687] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/_flir_camera_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[3.689717] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/libflir_camera_msgs__rosidl_generator_py.so\n'}
+[3.689838] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/msg\n'}
+[3.689928] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/msg/__init__.py\n'}
+[3.690014] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/msg/_image_meta_data.py\n'}
+[3.690100] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/msg/_image_meta_data_s.c\n'}
+[3.690177] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/msg/_camera_control.py\n'}
+[3.690207] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/msg/_camera_control_s.c\n'}
+[3.690337] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.690376] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/_flir_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.690405] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/__init__.py\n'}
+[3.690432] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.690461] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/_flir_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.690493] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.707750] (-) TimerEvent: {}
+[3.710803] (flir_camera_msgs) StdoutLine: {'line': b"Listing '/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs'...\n"}
+[3.710927] (flir_camera_msgs) StdoutLine: {'line': b"Compiling '/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/__init__.py'...\n"}
+[3.710965] (flir_camera_msgs) StdoutLine: {'line': b"Listing '/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/msg'...\n"}
+[3.710991] (flir_camera_msgs) StdoutLine: {'line': b"Compiling '/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/msg/__init__.py'...\n"}
+[3.711019] (flir_camera_msgs) StdoutLine: {'line': b"Compiling '/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/msg/_camera_control.py'...\n"}
+[3.711044] (flir_camera_msgs) StdoutLine: {'line': b"Compiling '/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/msg/_image_meta_data.py'...\n"}
+[3.714313] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.714510] (flir_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.714654] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.714720] (flir_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.714752] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.714785] (flir_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.714961] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_generator_py.so\n'}
+[3.715010] (flir_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_generator_py.so" to ""\n'}
+[3.715429] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/msg/ImageMetaData.idl\n'}
+[3.715509] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/msg/CameraControl.idl\n'}
+[3.715738] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/msg/ImageMetaData.msg\n'}
+[3.716062] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/msg/CameraControl.msg\n'}
+[3.716173] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/ament_index/resource_index/package_run_dependencies/flir_camera_msgs\n'}
+[3.716261] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/ament_index/resource_index/parent_prefix_path/flir_camera_msgs\n'}
+[3.716458] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/environment/ament_prefix_path.sh\n'}
+[3.716521] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/environment/ament_prefix_path.dsv\n'}
+[3.716550] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/environment/path.sh\n'}
+[3.716577] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/environment/path.dsv\n'}
+[3.716602] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/local_setup.bash\n'}
+[3.716627] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/local_setup.sh\n'}
+[3.716651] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/local_setup.zsh\n'}
+[3.716679] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/local_setup.dsv\n'}
+[3.716703] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/package.dsv\n'}
+[3.716730] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/ament_index/resource_index/packages/flir_camera_msgs\n'}
+[3.717573] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_generator_cExport.cmake\n'}
+[3.717670] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.717835] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.717904] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.717940] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_generator_cppExport.cmake\n'}
+[3.717997] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.718303] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.718495] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.718601] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.718651] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgs__rosidl_typesupport_cExport.cmake\n'}
+[3.718682] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.718870] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.718915] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.718977] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[3.719019] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.719065] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_generator_pyExport.cmake\n'}
+[3.719095] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.719433] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[3.719478] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.719508] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.719533] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.719559] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.719584] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.719615] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.719639] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgsConfig.cmake\n'}
+[3.719666] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgsConfig-version.cmake\n'}
+[3.719690] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/package.xml\n'}
+[3.720824] (flir_camera_msgs) CommandEnded: {'returncode': 0}
+[3.730872] (flir_camera_msgs) JobEnded: {'identifier': 'flir_camera_msgs', 'rc': 0}
+[3.731857] (spinnaker_camera_driver) JobStarted: {'identifier': 'spinnaker_camera_driver'}
+[3.807895] (-) TimerEvent: {}
+[3.908263] (-) TimerEvent: {}
+[4.008586] (-) TimerEvent: {}
+[4.015563] (spinnaker_camera_driver) JobProgress: {'identifier': 'spinnaker_camera_driver', 'progress': 'cmake'}
+[4.016726] (spinnaker_camera_driver) Command: {'cmd': ['/usr/local/bin/cmake', '/home/adwait/workspace/flir_camera_driver/spinnaker_camera_driver', '-DCMAKE_INSTALL_PREFIX=/home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver'], 'cwd': '/home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'adwait'), ('GIT_ASKPASS', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/adwait'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-272f4eac-cdd5-418f-b098-0d1263343e37.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'adwait'), ('NAME', 'DESKTOP-34LQD19'), ('WSL_INTEROP', '/run/WSL/80285_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Incredibuild:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/adwai/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/adwai/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/adwai/.dotnet/tools:/mnt/c/Users/adwai/AppData/Local/GitHubDesktop/bin:/snap/bin:/home/adwait/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('ARENA_ROOT', '/opt/ArenaSDK_v0.1.68_Linux_x64/ArenaSDK_Linux_x64/'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6ee8dfea5a.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs:/opt/ros/humble')]), 'shell': False}
+[4.093410] (spinnaker_camera_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[4.108678] (-) TimerEvent: {}
+[4.208968] (-) TimerEvent: {}
+[4.309317] (-) TimerEvent: {}
+[4.322696] (spinnaker_camera_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[4.409432] (-) TimerEvent: {}
+[4.498952] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[4.509537] (-) TimerEvent: {}
+[4.609870] (-) TimerEvent: {}
+[4.710521] (-) TimerEvent: {}
+[4.756360] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[4.761266] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[4.761456] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[4.761635] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.763519] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.810730] (-) TimerEvent: {}
+[4.869905] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.874727] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[4.874984] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.875389] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.910970] (-) TimerEvent: {}
+[5.004476] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found inc dir: SPINNAKER_INCLUDE_DIRS-NOTFOUND\n'}
+[5.004951] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found variable: FALSE at SPINNAKER_LIBRARIES-NOTFOUND and SPINNAKER_INCLUDE_DIRS-NOTFOUND\n'}
+[5.005101] (spinnaker_camera_driver) StdoutLine: {'line': b'-- spinnaker not found\n'}
+[5.005186] (spinnaker_camera_driver) StdoutLine: {'line': b'-- libSpinnaker not found in system library path\n'}
+[5.011003] (-) TimerEvent: {}
+[5.045815] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Running download_spinnaker script with arguments: x86_64 /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/usr/lib jammy\n'}
+[5.111140] (-) TimerEvent: {}
+[5.211448] (-) TimerEvent: {}
+[5.311881] (-) TimerEvent: {}
+[5.412371] (-) TimerEvent: {}
+[5.513080] (-) TimerEvent: {}
+[5.613598] (-) TimerEvent: {}
+[5.714093] (-) TimerEvent: {}
+[5.814682] (-) TimerEvent: {}
+[5.915419] (-) TimerEvent: {}
+[6.016073] (-) TimerEvent: {}
+[6.116642] (-) TimerEvent: {}
+[6.217055] (-) TimerEvent: {}
+[6.317463] (-) TimerEvent: {}
+[6.418061] (-) TimerEvent: {}
+[6.518658] (-) TimerEvent: {}
+[6.619270] (-) TimerEvent: {}
+[6.719838] (-) TimerEvent: {}
+[6.820368] (-) TimerEvent: {}
+[6.920901] (-) TimerEvent: {}
+[7.021364] (-) TimerEvent: {}
+[7.121883] (-) TimerEvent: {}
+[7.222356] (-) TimerEvent: {}
+[7.322813] (-) TimerEvent: {}
+[7.423300] (-) TimerEvent: {}
+[7.523934] (-) TimerEvent: {}
+[7.624563] (-) TimerEvent: {}
+[7.725133] (-) TimerEvent: {}
+[7.825798] (-) TimerEvent: {}
+[7.926409] (-) TimerEvent: {}
+[8.026865] (-) TimerEvent: {}
+[8.127517] (-) TimerEvent: {}
+[8.228059] (-) TimerEvent: {}
+[8.328700] (-) TimerEvent: {}
+[8.429156] (-) TimerEvent: {}
+[8.529651] (-) TimerEvent: {}
+[8.630201] (-) TimerEvent: {}
+[8.730563] (-) TimerEvent: {}
+[8.831036] (-) TimerEvent: {}
+[8.931614] (-) TimerEvent: {}
+[9.032081] (-) TimerEvent: {}
+[9.132567] (-) TimerEvent: {}
+[9.232998] (-) TimerEvent: {}
+[9.333329] (-) TimerEvent: {}
+[9.433752] (-) TimerEvent: {}
+[9.534309] (-) TimerEvent: {}
+[9.634877] (-) TimerEvent: {}
+[9.735523] (-) TimerEvent: {}
+[9.836055] (-) TimerEvent: {}
+[9.936557] (-) TimerEvent: {}
+[10.037074] (-) TimerEvent: {}
+[10.137472] (-) TimerEvent: {}
+[10.237956] (-) TimerEvent: {}
+[10.338400] (-) TimerEvent: {}
+[10.438921] (-) TimerEvent: {}
+[10.539441] (-) TimerEvent: {}
+[10.639979] (-) TimerEvent: {}
+[10.740554] (-) TimerEvent: {}
+[10.840953] (-) TimerEvent: {}
+[10.941442] (-) TimerEvent: {}
+[11.041942] (-) TimerEvent: {}
+[11.142502] (-) TimerEvent: {}
+[11.243047] (-) TimerEvent: {}
+[11.343631] (-) TimerEvent: {}
+[11.444188] (-) TimerEvent: {}
+[11.544695] (-) TimerEvent: {}
+[11.645321] (-) TimerEvent: {}
+[11.745939] (-) TimerEvent: {}
+[11.846574] (-) TimerEvent: {}
+[11.947104] (-) TimerEvent: {}
+[12.047599] (-) TimerEvent: {}
+[12.148195] (-) TimerEvent: {}
+[12.248784] (-) TimerEvent: {}
+[12.349332] (-) TimerEvent: {}
+[12.449872] (-) TimerEvent: {}
+[12.550427] (-) TimerEvent: {}
+[12.651034] (-) TimerEvent: {}
+[12.751549] (-) TimerEvent: {}
+[12.852164] (-) TimerEvent: {}
+[12.952694] (-) TimerEvent: {}
+[13.053197] (-) TimerEvent: {}
+[13.153693] (-) TimerEvent: {}
+[13.254120] (-) TimerEvent: {}
+[13.354599] (-) TimerEvent: {}
+[13.455077] (-) TimerEvent: {}
+[13.555627] (-) TimerEvent: {}
+[13.656153] (-) TimerEvent: {}
+[13.756721] (-) TimerEvent: {}
+[13.857368] (-) TimerEvent: {}
+[13.957957] (-) TimerEvent: {}
+[14.058501] (-) TimerEvent: {}
+[14.158996] (-) TimerEvent: {}
+[14.259377] (-) TimerEvent: {}
+[14.359785] (-) TimerEvent: {}
+[14.460184] (-) TimerEvent: {}
+[14.560799] (-) TimerEvent: {}
+[14.661309] (-) TimerEvent: {}
+[14.761942] (-) TimerEvent: {}
+[14.862578] (-) TimerEvent: {}
+[14.963206] (-) TimerEvent: {}
+[15.063755] (-) TimerEvent: {}
+[15.164329] (-) TimerEvent: {}
+[15.264821] (-) TimerEvent: {}
+[15.365428] (-) TimerEvent: {}
+[15.466060] (-) TimerEvent: {}
+[15.566611] (-) TimerEvent: {}
+[15.667173] (-) TimerEvent: {}
+[15.767736] (-) TimerEvent: {}
+[15.868431] (-) TimerEvent: {}
+[15.969024] (-) TimerEvent: {}
+[16.069631] (-) TimerEvent: {}
+[16.170281] (-) TimerEvent: {}
+[16.270803] (-) TimerEvent: {}
+[16.371248] (-) TimerEvent: {}
+[16.471873] (-) TimerEvent: {}
+[16.572388] (-) TimerEvent: {}
+[16.672986] (-) TimerEvent: {}
+[16.773550] (-) TimerEvent: {}
+[16.874023] (-) TimerEvent: {}
+[16.974617] (-) TimerEvent: {}
+[17.075218] (-) TimerEvent: {}
+[17.175869] (-) TimerEvent: {}
+[17.276469] (-) TimerEvent: {}
+[17.376951] (-) TimerEvent: {}
+[17.477519] (-) TimerEvent: {}
+[17.578158] (-) TimerEvent: {}
+[17.678793] (-) TimerEvent: {}
+[17.779376] (-) TimerEvent: {}
+[17.880009] (-) TimerEvent: {}
+[17.980536] (-) TimerEvent: {}
+[18.080926] (-) TimerEvent: {}
+[18.181485] (-) TimerEvent: {}
+[18.281990] (-) TimerEvent: {}
+[18.382641] (-) TimerEvent: {}
+[18.482906] (-) TimerEvent: {}
+[18.583258] (-) TimerEvent: {}
+[18.683785] (-) TimerEvent: {}
+[18.784474] (-) TimerEvent: {}
+[18.885060] (-) TimerEvent: {}
+[18.985636] (-) TimerEvent: {}
+[19.086046] (-) TimerEvent: {}
+[19.186576] (-) TimerEvent: {}
+[19.287143] (-) TimerEvent: {}
+[19.387627] (-) TimerEvent: {}
+[19.488130] (-) TimerEvent: {}
+[19.588656] (-) TimerEvent: {}
+[19.689234] (-) TimerEvent: {}
+[19.789826] (-) TimerEvent: {}
+[19.890541] (-) TimerEvent: {}
+[19.991110] (-) TimerEvent: {}
+[20.091759] (-) TimerEvent: {}
+[20.192380] (-) TimerEvent: {}
+[20.293037] (-) TimerEvent: {}
+[20.393746] (-) TimerEvent: {}
+[20.494361] (-) TimerEvent: {}
+[20.594907] (-) TimerEvent: {}
+[20.695498] (-) TimerEvent: {}
+[20.796194] (-) TimerEvent: {}
+[20.896836] (-) TimerEvent: {}
+[20.997462] (-) TimerEvent: {}
+[21.098295] (-) TimerEvent: {}
+[21.198844] (-) TimerEvent: {}
+[21.299399] (-) TimerEvent: {}
+[21.399922] (-) TimerEvent: {}
+[21.500533] (-) TimerEvent: {}
+[21.601006] (-) TimerEvent: {}
+[21.701612] (-) TimerEvent: {}
+[21.802101] (-) TimerEvent: {}
+[21.902512] (-) TimerEvent: {}
+[22.002866] (-) TimerEvent: {}
+[22.103375] (-) TimerEvent: {}
+[22.203989] (-) TimerEvent: {}
+[22.304489] (-) TimerEvent: {}
+[22.404988] (-) TimerEvent: {}
+[22.505418] (-) TimerEvent: {}
+[22.605908] (-) TimerEvent: {}
+[22.706378] (-) TimerEvent: {}
+[22.806866] (-) TimerEvent: {}
+[22.907336] (-) TimerEvent: {}
+[23.007932] (-) TimerEvent: {}
+[23.108379] (-) TimerEvent: {}
+[23.208836] (-) TimerEvent: {}
+[23.309400] (-) TimerEvent: {}
+[23.409898] (-) TimerEvent: {}
+[23.510503] (-) TimerEvent: {}
+[23.611001] (-) TimerEvent: {}
+[23.711632] (-) TimerEvent: {}
+[23.812238] (-) TimerEvent: {}
+[23.912875] (-) TimerEvent: {}
+[24.013435] (-) TimerEvent: {}
+[24.113964] (-) TimerEvent: {}
+[24.214406] (-) TimerEvent: {}
+[24.315001] (-) TimerEvent: {}
+[24.415612] (-) TimerEvent: {}
+[24.516143] (-) TimerEvent: {}
+[24.616688] (-) TimerEvent: {}
+[24.717285] (-) TimerEvent: {}
+[24.818075] (-) TimerEvent: {}
+[24.918646] (-) TimerEvent: {}
+[25.019242] (-) TimerEvent: {}
+[25.119978] (-) TimerEvent: {}
+[25.220458] (-) TimerEvent: {}
+[25.320957] (-) TimerEvent: {}
+[25.421393] (-) TimerEvent: {}
+[25.521860] (-) TimerEvent: {}
+[25.622325] (-) TimerEvent: {}
+[25.722782] (-) TimerEvent: {}
+[25.823402] (-) TimerEvent: {}
+[25.923945] (-) TimerEvent: {}
+[26.024382] (-) TimerEvent: {}
+[26.124859] (-) TimerEvent: {}
+[26.225344] (-) TimerEvent: {}
+[26.325813] (-) TimerEvent: {}
+[26.426389] (-) TimerEvent: {}
+[26.526989] (-) TimerEvent: {}
+[26.627410] (-) TimerEvent: {}
+[26.727857] (-) TimerEvent: {}
+[26.828439] (-) TimerEvent: {}
+[26.928853] (-) TimerEvent: {}
+[27.029400] (-) TimerEvent: {}
+[27.130005] (-) TimerEvent: {}
+[27.230522] (-) TimerEvent: {}
+[27.331001] (-) TimerEvent: {}
+[27.431490] (-) TimerEvent: {}
+[27.532038] (-) TimerEvent: {}
+[27.632508] (-) TimerEvent: {}
+[27.733175] (-) TimerEvent: {}
+[27.833750] (-) TimerEvent: {}
+[27.934234] (-) TimerEvent: {}
+[28.034816] (-) TimerEvent: {}
+[28.135295] (-) TimerEvent: {}
+[28.235824] (-) TimerEvent: {}
+[28.336485] (-) TimerEvent: {}
+[28.437014] (-) TimerEvent: {}
+[28.537584] (-) TimerEvent: {}
+[28.638164] (-) TimerEvent: {}
+[28.738752] (-) TimerEvent: {}
+[28.839296] (-) TimerEvent: {}
+[28.939926] (-) TimerEvent: {}
+[29.040435] (-) TimerEvent: {}
+[29.140994] (-) TimerEvent: {}
+[29.241665] (-) TimerEvent: {}
+[29.342306] (-) TimerEvent: {}
+[29.442921] (-) TimerEvent: {}
+[29.543693] (-) TimerEvent: {}
+[29.644269] (-) TimerEvent: {}
+[29.744747] (-) TimerEvent: {}
+[29.845093] (-) TimerEvent: {}
+[29.945694] (-) TimerEvent: {}
+[30.046295] (-) TimerEvent: {}
+[30.146847] (-) TimerEvent: {}
+[30.247291] (-) TimerEvent: {}
+[30.347843] (-) TimerEvent: {}
+[30.448450] (-) TimerEvent: {}
+[30.549029] (-) TimerEvent: {}
+[30.649460] (-) TimerEvent: {}
+[30.749753] (-) TimerEvent: {}
+[30.850125] (-) TimerEvent: {}
+[30.950635] (-) TimerEvent: {}
+[31.051187] (-) TimerEvent: {}
+[31.151834] (-) TimerEvent: {}
+[31.252430] (-) TimerEvent: {}
+[31.352970] (-) TimerEvent: {}
+[31.453426] (-) TimerEvent: {}
+[31.553947] (-) TimerEvent: {}
+[31.654509] (-) TimerEvent: {}
+[31.755064] (-) TimerEvent: {}
+[31.855897] (-) TimerEvent: {}
+[31.956780] (-) TimerEvent: {}
+[32.057264] (-) TimerEvent: {}
+[32.157861] (-) TimerEvent: {}
+[32.258431] (-) TimerEvent: {}
+[32.359010] (-) TimerEvent: {}
+[32.459571] (-) TimerEvent: {}
+[32.560205] (-) TimerEvent: {}
+[32.660958] (-) TimerEvent: {}
+[32.761540] (-) TimerEvent: {}
+[32.862123] (-) TimerEvent: {}
+[32.962623] (-) TimerEvent: {}
+[33.063221] (-) TimerEvent: {}
+[33.163867] (-) TimerEvent: {}
+[33.264496] (-) TimerEvent: {}
+[33.365164] (-) TimerEvent: {}
+[33.465787] (-) TimerEvent: {}
+[33.566372] (-) TimerEvent: {}
+[33.667165] (-) TimerEvent: {}
+[33.767644] (-) TimerEvent: {}
+[33.868320] (-) TimerEvent: {}
+[33.969003] (-) TimerEvent: {}
+[34.069479] (-) TimerEvent: {}
+[34.169889] (-) TimerEvent: {}
+[34.270433] (-) TimerEvent: {}
+[34.371026] (-) TimerEvent: {}
+[34.471662] (-) TimerEvent: {}
+[34.572395] (-) TimerEvent: {}
+[34.672956] (-) TimerEvent: {}
+[34.773469] (-) TimerEvent: {}
+[34.874016] (-) TimerEvent: {}
+[34.974609] (-) TimerEvent: {}
+[35.075063] (-) TimerEvent: {}
+[35.175673] (-) TimerEvent: {}
+[35.276170] (-) TimerEvent: {}
+[35.376728] (-) TimerEvent: {}
+[35.477146] (-) TimerEvent: {}
+[35.577595] (-) TimerEvent: {}
+[35.678243] (-) TimerEvent: {}
+[35.778869] (-) TimerEvent: {}
+[35.879469] (-) TimerEvent: {}
+[35.980059] (-) TimerEvent: {}
+[36.080722] (-) TimerEvent: {}
+[36.181199] (-) TimerEvent: {}
+[36.281605] (-) TimerEvent: {}
+[36.382143] (-) TimerEvent: {}
+[36.482772] (-) TimerEvent: {}
+[36.583336] (-) TimerEvent: {}
+[36.683788] (-) TimerEvent: {}
+[36.784306] (-) TimerEvent: {}
+[36.884999] (-) TimerEvent: {}
+[36.985612] (-) TimerEvent: {}
+[37.086169] (-) TimerEvent: {}
+[37.186794] (-) TimerEvent: {}
+[37.287416] (-) TimerEvent: {}
+[37.387956] (-) TimerEvent: {}
+[37.488531] (-) TimerEvent: {}
+[37.589031] (-) TimerEvent: {}
+[37.689643] (-) TimerEvent: {}
+[37.790283] (-) TimerEvent: {}
+[37.890859] (-) TimerEvent: {}
+[37.991540] (-) TimerEvent: {}
+[38.092259] (-) TimerEvent: {}
+[38.192844] (-) TimerEvent: {}
+[38.293476] (-) TimerEvent: {}
+[38.394062] (-) TimerEvent: {}
+[38.494600] (-) TimerEvent: {}
+[38.595288] (-) TimerEvent: {}
+[38.696049] (-) TimerEvent: {}
+[38.796514] (-) TimerEvent: {}
+[38.896981] (-) TimerEvent: {}
+[38.997664] (-) TimerEvent: {}
+[39.098228] (-) TimerEvent: {}
+[39.198694] (-) TimerEvent: {}
+[39.299274] (-) TimerEvent: {}
+[39.399912] (-) TimerEvent: {}
+[39.500573] (-) TimerEvent: {}
+[39.601044] (-) TimerEvent: {}
+[39.701688] (-) TimerEvent: {}
+[39.802288] (-) TimerEvent: {}
+[39.902874] (-) TimerEvent: {}
+[40.003460] (-) TimerEvent: {}
+[40.104213] (-) TimerEvent: {}
+[40.204780] (-) TimerEvent: {}
+[40.305324] (-) TimerEvent: {}
+[40.405871] (-) TimerEvent: {}
+[40.506490] (-) TimerEvent: {}
+[40.607117] (-) TimerEvent: {}
+[40.707700] (-) TimerEvent: {}
+[40.808278] (-) TimerEvent: {}
+[40.908740] (-) TimerEvent: {}
+[41.009397] (-) TimerEvent: {}
+[41.109965] (-) TimerEvent: {}
+[41.210477] (-) TimerEvent: {}
+[41.311095] (-) TimerEvent: {}
+[41.411705] (-) TimerEvent: {}
+[41.512284] (-) TimerEvent: {}
+[41.612848] (-) TimerEvent: {}
+[41.713423] (-) TimerEvent: {}
+[41.813948] (-) TimerEvent: {}
+[41.914454] (-) TimerEvent: {}
+[42.015037] (-) TimerEvent: {}
+[42.115755] (-) TimerEvent: {}
+[42.216356] (-) TimerEvent: {}
+[42.317018] (-) TimerEvent: {}
+[42.417605] (-) TimerEvent: {}
+[42.518209] (-) TimerEvent: {}
+[42.618854] (-) TimerEvent: {}
+[42.719457] (-) TimerEvent: {}
+[42.820019] (-) TimerEvent: {}
+[42.920648] (-) TimerEvent: {}
+[43.021097] (-) TimerEvent: {}
+[43.121603] (-) TimerEvent: {}
+[43.222174] (-) TimerEvent: {}
+[43.322671] (-) TimerEvent: {}
+[43.423390] (-) TimerEvent: {}
+[43.523941] (-) TimerEvent: {}
+[43.624406] (-) TimerEvent: {}
+[43.725153] (-) TimerEvent: {}
+[43.825737] (-) TimerEvent: {}
+[43.926138] (-) TimerEvent: {}
+[44.026756] (-) TimerEvent: {}
+[44.127383] (-) TimerEvent: {}
+[44.227966] (-) TimerEvent: {}
+[44.328540] (-) TimerEvent: {}
+[44.429087] (-) TimerEvent: {}
+[44.529646] (-) TimerEvent: {}
+[44.630232] (-) TimerEvent: {}
+[44.730774] (-) TimerEvent: {}
+[44.831353] (-) TimerEvent: {}
+[44.931817] (-) TimerEvent: {}
+[45.032222] (-) TimerEvent: {}
+[45.132667] (-) TimerEvent: {}
+[45.233273] (-) TimerEvent: {}
+[45.333586] (-) TimerEvent: {}
+[45.434188] (-) TimerEvent: {}
+[45.534907] (-) TimerEvent: {}
+[45.635406] (-) TimerEvent: {}
+[45.735789] (-) TimerEvent: {}
+[45.836297] (-) TimerEvent: {}
+[45.936859] (-) TimerEvent: {}
+[46.037451] (-) TimerEvent: {}
+[46.137947] (-) TimerEvent: {}
+[46.238499] (-) TimerEvent: {}
+[46.339074] (-) TimerEvent: {}
+[46.439770] (-) TimerEvent: {}
+[46.540339] (-) TimerEvent: {}
+[46.641016] (-) TimerEvent: {}
+[46.741672] (-) TimerEvent: {}
+[46.842188] (-) TimerEvent: {}
+[46.942710] (-) TimerEvent: {}
+[47.043297] (-) TimerEvent: {}
+[47.144061] (-) TimerEvent: {}
+[47.244577] (-) TimerEvent: {}
+[47.345190] (-) TimerEvent: {}
+[47.445691] (-) TimerEvent: {}
+[47.546302] (-) TimerEvent: {}
+[47.646932] (-) TimerEvent: {}
+[47.747416] (-) TimerEvent: {}
+[47.847973] (-) TimerEvent: {}
+[47.948549] (-) TimerEvent: {}
+[48.049038] (-) TimerEvent: {}
+[48.149512] (-) TimerEvent: {}
+[48.250121] (-) TimerEvent: {}
+[48.350534] (-) TimerEvent: {}
+[48.450917] (-) TimerEvent: {}
+[48.551534] (-) TimerEvent: {}
+[48.652022] (-) TimerEvent: {}
+[48.752505] (-) TimerEvent: {}
+[48.852956] (-) TimerEvent: {}
+[48.953382] (-) TimerEvent: {}
+[49.053818] (-) TimerEvent: {}
+[49.154260] (-) TimerEvent: {}
+[49.254806] (-) TimerEvent: {}
+[49.355420] (-) TimerEvent: {}
+[49.456075] (-) TimerEvent: {}
+[49.556695] (-) TimerEvent: {}
+[49.657156] (-) TimerEvent: {}
+[49.757681] (-) TimerEvent: {}
+[49.858264] (-) TimerEvent: {}
+[49.958762] (-) TimerEvent: {}
+[50.059253] (-) TimerEvent: {}
+[50.159716] (-) TimerEvent: {}
+[50.260185] (-) TimerEvent: {}
+[50.360704] (-) TimerEvent: {}
+[50.461195] (-) TimerEvent: {}
+[50.561656] (-) TimerEvent: {}
+[50.662338] (-) TimerEvent: {}
+[50.762981] (-) TimerEvent: {}
+[50.863720] (-) TimerEvent: {}
+[50.964243] (-) TimerEvent: {}
+[51.064604] (-) TimerEvent: {}
+[51.165148] (-) TimerEvent: {}
+[51.265698] (-) TimerEvent: {}
+[51.366229] (-) TimerEvent: {}
+[51.466595] (-) TimerEvent: {}
+[51.567099] (-) TimerEvent: {}
+[51.667592] (-) TimerEvent: {}
+[51.768115] (-) TimerEvent: {}
+[51.868703] (-) TimerEvent: {}
+[51.969264] (-) TimerEvent: {}
+[52.069751] (-) TimerEvent: {}
+[52.170295] (-) TimerEvent: {}
+[52.270874] (-) TimerEvent: {}
+[52.371471] (-) TimerEvent: {}
+[52.472047] (-) TimerEvent: {}
+[52.572566] (-) TimerEvent: {}
+[52.673072] (-) TimerEvent: {}
+[52.773704] (-) TimerEvent: {}
+[52.874293] (-) TimerEvent: {}
+[52.974761] (-) TimerEvent: {}
+[53.075248] (-) TimerEvent: {}
+[53.175757] (-) TimerEvent: {}
+[53.276295] (-) TimerEvent: {}
+[53.376760] (-) TimerEvent: {}
+[53.477294] (-) TimerEvent: {}
+[53.577707] (-) TimerEvent: {}
+[53.678267] (-) TimerEvent: {}
+[53.778984] (-) TimerEvent: {}
+[53.879467] (-) TimerEvent: {}
+[53.980078] (-) TimerEvent: {}
+[54.080477] (-) TimerEvent: {}
+[54.180887] (-) TimerEvent: {}
+[54.281271] (-) TimerEvent: {}
+[54.381844] (-) TimerEvent: {}
+[54.482437] (-) TimerEvent: {}
+[54.583038] (-) TimerEvent: {}
+[54.683514] (-) TimerEvent: {}
+[54.784129] (-) TimerEvent: {}
+[54.884652] (-) TimerEvent: {}
+[54.985054] (-) TimerEvent: {}
+[55.085724] (-) TimerEvent: {}
+[55.186416] (-) TimerEvent: {}
+[55.287100] (-) TimerEvent: {}
+[55.387719] (-) TimerEvent: {}
+[55.488315] (-) TimerEvent: {}
+[55.588688] (-) TimerEvent: {}
+[55.689281] (-) TimerEvent: {}
+[55.789930] (-) TimerEvent: {}
+[55.890530] (-) TimerEvent: {}
+[55.991022] (-) TimerEvent: {}
+[56.091530] (-) TimerEvent: {}
+[56.192042] (-) TimerEvent: {}
+[56.292558] (-) TimerEvent: {}
+[56.393128] (-) TimerEvent: {}
+[56.493613] (-) TimerEvent: {}
+[56.594038] (-) TimerEvent: {}
+[56.694463] (-) TimerEvent: {}
+[56.794858] (-) TimerEvent: {}
+[56.895111] (-) TimerEvent: {}
+[56.995408] (-) TimerEvent: {}
+[57.095776] (-) TimerEvent: {}
+[57.196018] (-) TimerEvent: {}
+[57.231042] (spinnaker_camera_driver) StdoutLine: {'line': b'-- PROCESS RESULT: CPU architecture is %s x86_64\n'}
+[57.231702] (spinnaker_camera_driver) StdoutLine: {'line': b'OS code name is %s jammy\n'}
+[57.231774] (spinnaker_camera_driver) StdoutLine: {'line': b'Destination folder is %s /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/usr/lib\n'}
+[57.231807] (spinnaker_camera_driver) StdoutLine: {'line': b'Downloading SDK archive from https://packages.clearpathrobotics.com/stable/flir/Spinnaker/Ubuntu22.04/spinnaker-3.1.0.79-Ubuntu22.04-amd64-pkg.tar.gz...\n'}
+[57.231837] (spinnaker_camera_driver) StdoutLine: {'line': b'Unpacking tarball.\n'}
+[57.231864] (spinnaker_camera_driver) StdoutLine: {'line': b'Unpacking debs.\n'}
+[57.231890] (spinnaker_camera_driver) StdoutLine: {'line': b'Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/libspinnaker-dev_3.1.0.79_amd64.deb\n'}
+[57.231917] (spinnaker_camera_driver) StdoutLine: {'line': b'Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/spinview-qt_3.1.0.79_amd64.deb\n'}
+[57.231945] (spinnaker_camera_driver) StdoutLine: {'line': b'Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/libspinvideo-c-dev_3.1.0.79_amd64.deb\n'}
+[57.231971] (spinnaker_camera_driver) StdoutLine: {'line': b'Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/libgentl_3.1.0.79_amd64.deb\n'}
+[57.231997] (spinnaker_camera_driver) StdoutLine: {'line': b'Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/libspinnaker-c-dev_3.1.0.79_amd64.deb\n'}
+[57.232021] (spinnaker_camera_driver) StdoutLine: {'line': b'Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/libspinvideo_3.1.0.79_amd64.deb\n'}
+[57.232046] (spinnaker_camera_driver) StdoutLine: {'line': b'Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/spinnaker_3.1.0.79_amd64.deb\n'}
+[57.232071] (spinnaker_camera_driver) StdoutLine: {'line': b'Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/libspinnaker_3.1.0.79_amd64.deb\n'}
+[57.232096] (spinnaker_camera_driver) StdoutLine: {'line': b'Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/spinupdate_3.1.0.79_amd64.deb\n'}
+[57.232141] (spinnaker_camera_driver) StdoutLine: {'line': b'Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/spinupdate-dev_3.1.0.79_amd64.deb\n'}
+[57.232172] (spinnaker_camera_driver) StdoutLine: {'line': b'Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/spinnaker-doc_3.1.0.79_amd64.deb\n'}
+[57.232199] (spinnaker_camera_driver) StdoutLine: {'line': b'Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/libspinvideo-c_3.1.0.79_amd64.deb\n'}
+[57.232226] (spinnaker_camera_driver) StdoutLine: {'line': b'Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/libspinnaker-c_3.1.0.79_amd64.deb\n'}
+[57.232259] (spinnaker_camera_driver) StdoutLine: {'line': b'Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/libspinvideo-dev_3.1.0.79_amd64.deb\n'}
+[57.232285] (spinnaker_camera_driver) StdoutLine: {'line': b'Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/spinview-qt-dev_3.1.0.79_amd64.deb\n'}
+[57.232346] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying libraries to /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/usr/lib\n'}
+[57.232423] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying: libSpinnaker_C.so.3\n'}
+[57.232474] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying: libSpinnaker_C.so\n'}
+[57.232506] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying: libSpinnaker_C.so.3.1.0.79\n'}
+[57.232564] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying: libSpinnaker.so\n'}
+[57.232630] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying: libSpinnaker.so.3.1.0.79\n'}
+[57.232662] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying: libSpinnaker.so.3\n'}
+[57.232721] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying: libGCBase_gcc11_v3_0.so\n'}
+[57.232806] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying: libGenApi_gcc11_v3_0.so\n'}
+[57.232951] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying: libXmlParser_gcc11_v3_0.so\n'}
+[57.232990] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying: libMathParser_gcc11_v3_0.so\n'}
+[57.233018] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying: libLog_gcc11_v3_0.so\n'}
+[57.233045] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying: libNodeMapData_gcc11_v3_0.so\n'}
+[57.233070] (spinnaker_camera_driver) StdoutLine: {'line': b'\n'}
+[57.233096] (spinnaker_camera_driver) StdoutLine: {'line': b'-- libSpinnaker library location: /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/usr/lib/libSpinnaker.so\n'}
+[57.233122] (spinnaker_camera_driver) StdoutLine: {'line': b'-- libSpinnaker include location: /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/opt/spinnaker/include\n'}
+[57.233153] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found inc dir: /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/opt/spinnaker/include\n'}
+[57.233181] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found SPINNAKER: /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/opt/spinnaker/include  \n'}
+[57.239748] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[57.296140] (-) TimerEvent: {}
+[57.330319] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[57.396235] (-) TimerEvent: {}
+[57.423222] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[57.432255] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[57.496363] (-) TimerEvent: {}
+[57.573940] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[57.582255] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[57.596494] (-) TimerEvent: {}
+[57.599043] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[57.614981] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[57.631417] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[57.677566] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[57.681030] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[57.696598] (-) TimerEvent: {}
+[57.796903] (-) TimerEvent: {}
+[57.897182] (-) TimerEvent: {}
+[57.997541] (-) TimerEvent: {}
+[58.098030] (-) TimerEvent: {}
+[58.198580] (-) TimerEvent: {}
+[58.299072] (-) TimerEvent: {}
+[58.399507] (-) TimerEvent: {}
+[58.499993] (-) TimerEvent: {}
+[58.600480] (-) TimerEvent: {}
+[58.700949] (-) TimerEvent: {}
+[58.801441] (-) TimerEvent: {}
+[58.902030] (-) TimerEvent: {}
+[59.002430] (-) TimerEvent: {}
+[59.103059] (-) TimerEvent: {}
+[59.203552] (-) TimerEvent: {}
+[59.303956] (-) TimerEvent: {}
+[59.404391] (-) TimerEvent: {}
+[59.504903] (-) TimerEvent: {}
+[59.605381] (-) TimerEvent: {}
+[59.701305] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[59.705451] (-) TimerEvent: {}
+[59.805919] (-) TimerEvent: {}
+[59.906407] (-) TimerEvent: {}
+[60.006868] (-) TimerEvent: {}
+[60.107449] (-) TimerEvent: {}
+[60.207765] (-) TimerEvent: {}
+[60.308054] (-) TimerEvent: {}
+[60.408366] (-) TimerEvent: {}
+[60.508678] (-) TimerEvent: {}
+[60.609042] (-) TimerEvent: {}
+[60.709421] (-) TimerEvent: {}
+[60.809874] (-) TimerEvent: {}
+[60.910173] (-) TimerEvent: {}
+[61.010495] (-) TimerEvent: {}
+[61.110961] (-) TimerEvent: {}
+[61.211298] (-) TimerEvent: {}
+[61.311779] (-) TimerEvent: {}
+[61.349541] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[61.412073] (-) TimerEvent: {}
+[61.512677] (-) TimerEvent: {}
+[61.613152] (-) TimerEvent: {}
+[61.713601] (-) TimerEvent: {}
+[61.814064] (-) TimerEvent: {}
+[61.914660] (-) TimerEvent: {}
+[62.015211] (-) TimerEvent: {}
+[62.115664] (-) TimerEvent: {}
+[62.216106] (-) TimerEvent: {}
+[62.316547] (-) TimerEvent: {}
+[62.416945] (-) TimerEvent: {}
+[62.517225] (-) TimerEvent: {}
+[62.617544] (-) TimerEvent: {}
+[62.717839] (-) TimerEvent: {}
+[62.818286] (-) TimerEvent: {}
+[62.918751] (-) TimerEvent: {}
+[63.019232] (-) TimerEvent: {}
+[63.119703] (-) TimerEvent: {}
+[63.220198] (-) TimerEvent: {}
+[63.320660] (-) TimerEvent: {}
+[63.421029] (-) TimerEvent: {}
+[63.521383] (-) TimerEvent: {}
+[63.621813] (-) TimerEvent: {}
+[63.722236] (-) TimerEvent: {}
+[63.822800] (-) TimerEvent: {}
+[63.923293] (-) TimerEvent: {}
+[64.023786] (-) TimerEvent: {}
+[64.124268] (-) TimerEvent: {}
+[64.224741] (-) TimerEvent: {}
+[64.325200] (-) TimerEvent: {}
+[64.425569] (-) TimerEvent: {}
+[64.525834] (-) TimerEvent: {}
+[64.626137] (-) TimerEvent: {}
+[64.726592] (-) TimerEvent: {}
+[64.827049] (-) TimerEvent: {}
+[64.927452] (-) TimerEvent: {}
+[65.027797] (-) TimerEvent: {}
+[65.128062] (-) TimerEvent: {}
+[65.228377] (-) TimerEvent: {}
+[65.328795] (-) TimerEvent: {}
+[65.429203] (-) TimerEvent: {}
+[65.529661] (-) TimerEvent: {}
+[65.593388] (spinnaker_camera_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[65.617966] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[65.629938] (-) TimerEvent: {}
+[65.730462] (-) TimerEvent: {}
+[65.830913] (-) TimerEvent: {}
+[65.905687] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[65.907030] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[65.931041] (-) TimerEvent: {}
+[66.025179] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.12 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[66.031188] (-) TimerEvent: {}
+[66.055114] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[66.084940] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found camera_info_manager: 3.1.11 (/opt/ros/humble/share/camera_info_manager/cmake)\n'}
+[66.098068] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found image_transport: 3.1.11 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[66.131281] (-) TimerEvent: {}
+[66.231512] (-) TimerEvent: {}
+[66.331786] (-) TimerEvent: {}
+[66.432226] (-) TimerEvent: {}
+[66.532643] (-) TimerEvent: {}
+[66.633073] (-) TimerEvent: {}
+[66.733485] (-) TimerEvent: {}
+[66.833850] (-) TimerEvent: {}
+[66.934254] (-) TimerEvent: {}
+[67.034619] (-) TimerEvent: {}
+[67.135062] (-) TimerEvent: {}
+[67.235562] (-) TimerEvent: {}
+[67.335914] (-) TimerEvent: {}
+[67.436151] (-) TimerEvent: {}
+[67.536432] (-) TimerEvent: {}
+[67.636852] (-) TimerEvent: {}
+[67.737237] (-) TimerEvent: {}
+[67.837701] (-) TimerEvent: {}
+[67.938121] (-) TimerEvent: {}
+[68.038416] (-) TimerEvent: {}
+[68.138855] (-) TimerEvent: {}
+[68.239422] (-) TimerEvent: {}
+[68.339834] (-) TimerEvent: {}
+[68.387064] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found flir_camera_msgs: 2.0.8 (/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake)\n'}
+[68.411123] (spinnaker_camera_driver) StdoutLine: {'line': b'-- installing spinnaker libraries from /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/opt/spinnaker/lib\n'}
+[68.414411] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_copyright: 0.12.12 (/opt/ros/humble/share/ament_cmake_copyright/cmake)\n'}
+[68.417302] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.12.12 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)\n'}
+[68.419586] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.12.12 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)\n'}
+[68.421979] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.12.12 (/opt/ros/humble/share/ament_cmake_flake8/cmake)\n'}
+[68.424614] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_lint_cmake: 0.12.12 (/opt/ros/humble/share/ament_cmake_lint_cmake/cmake)\n'}
+[68.427046] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.12.12 (/opt/ros/humble/share/ament_cmake_pep257/cmake)\n'}
+[68.429537] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_clang_format: 0.12.12 (/opt/ros/humble/share/ament_cmake_clang_format/cmake)\n'}
+[68.432121] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_xmllint: 0.12.12 (/opt/ros/humble/share/ament_cmake_xmllint/cmake)\n'}
+[68.439914] (-) TimerEvent: {}
+[68.493697] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[68.508094] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Generating done\n'}
+[68.514131] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver\n'}
+[68.520360] (spinnaker_camera_driver) CommandEnded: {'returncode': 0}
+[68.521937] (spinnaker_camera_driver) JobProgress: {'identifier': 'spinnaker_camera_driver', 'progress': 'build'}
+[68.521983] (spinnaker_camera_driver) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver', '--', '-j20', '-l20'], 'cwd': '/home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'adwait'), ('GIT_ASKPASS', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/adwait'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-272f4eac-cdd5-418f-b098-0d1263343e37.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'adwait'), ('NAME', 'DESKTOP-34LQD19'), ('WSL_INTEROP', '/run/WSL/80285_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Incredibuild:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/adwai/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/adwai/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/adwai/.dotnet/tools:/mnt/c/Users/adwai/AppData/Local/GitHubDesktop/bin:/snap/bin:/home/adwait/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('ARENA_ROOT', '/opt/ArenaSDK_v0.1.68_Linux_x64/ArenaSDK_Linux_x64/'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6ee8dfea5a.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs:/opt/ros/humble')]), 'shell': False}
+[68.538277] (spinnaker_camera_driver) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/camera_driver.dir/src/camera.cpp.o\x1b[0m\n'}
+[68.538416] (spinnaker_camera_driver) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o\x1b[0m\n'}
+[68.538596] (spinnaker_camera_driver) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/camera_driver.dir/src/spinnaker_wrapper.cpp.o\x1b[0m\n'}
+[68.539162] (spinnaker_camera_driver) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/camera_driver.dir/src/pixel_format.cpp.o\x1b[0m\n'}
+[68.539295] (spinnaker_camera_driver) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/camera_driver.dir/src/spinnaker_wrapper_impl.cpp.o\x1b[0m\n'}
+[68.539570] (spinnaker_camera_driver) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/camera_driver.dir/src/genicam_utils.cpp.o\x1b[0m\n'}
+[68.540024] (-) TimerEvent: {}
+[68.540645] (spinnaker_camera_driver) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/camera_driver.dir/src/image.cpp.o\x1b[0m\n'}
+[68.640194] (-) TimerEvent: {}
+[68.740624] (-) TimerEvent: {}
+[68.840987] (-) TimerEvent: {}
+[68.941453] (-) TimerEvent: {}
+[69.041854] (-) TimerEvent: {}
+[69.142198] (-) TimerEvent: {}
+[69.242537] (-) TimerEvent: {}
+[69.342794] (-) TimerEvent: {}
+[69.443076] (-) TimerEvent: {}
+[69.543391] (-) TimerEvent: {}
+[69.643742] (-) TimerEvent: {}
+[69.744069] (-) TimerEvent: {}
+[69.844398] (-) TimerEvent: {}
+[69.944736] (-) TimerEvent: {}
+[70.045064] (-) TimerEvent: {}
+[70.145380] (-) TimerEvent: {}
+[70.245823] (-) TimerEvent: {}
+[70.346113] (-) TimerEvent: {}
+[70.446444] (-) TimerEvent: {}
+[70.546784] (-) TimerEvent: {}
+[70.647121] (-) TimerEvent: {}
+[70.747469] (-) TimerEvent: {}
+[70.847822] (-) TimerEvent: {}
+[70.948116] (-) TimerEvent: {}
+[71.048570] (-) TimerEvent: {}
+[71.148929] (-) TimerEvent: {}
+[71.249264] (-) TimerEvent: {}
+[71.349684] (-) TimerEvent: {}
+[71.449989] (-) TimerEvent: {}
+[71.550330] (-) TimerEvent: {}
+[71.650664] (-) TimerEvent: {}
+[71.750982] (-) TimerEvent: {}
+[71.851256] (-) TimerEvent: {}
+[71.951589] (-) TimerEvent: {}
+[72.052006] (-) TimerEvent: {}
+[72.152406] (-) TimerEvent: {}
+[72.252779] (-) TimerEvent: {}
+[72.353194] (-) TimerEvent: {}
+[72.453525] (-) TimerEvent: {}
+[72.553844] (-) TimerEvent: {}
+[72.654165] (-) TimerEvent: {}
+[72.754667] (-) TimerEvent: {}
+[72.854980] (-) TimerEvent: {}
+[72.955338] (-) TimerEvent: {}
+[73.055646] (-) TimerEvent: {}
+[73.156044] (-) TimerEvent: {}
+[73.256334] (-) TimerEvent: {}
+[73.356638] (-) TimerEvent: {}
+[73.456973] (-) TimerEvent: {}
+[73.557390] (-) TimerEvent: {}
+[73.657926] (-) TimerEvent: {}
+[73.758268] (-) TimerEvent: {}
+[73.858564] (-) TimerEvent: {}
+[73.958890] (-) TimerEvent: {}
+[74.059410] (-) TimerEvent: {}
+[74.159737] (-) TimerEvent: {}
+[74.260106] (-) TimerEvent: {}
+[74.360524] (-) TimerEvent: {}
+[74.460808] (-) TimerEvent: {}
+[74.561273] (-) TimerEvent: {}
+[74.661617] (-) TimerEvent: {}
+[74.762001] (-) TimerEvent: {}
+[74.862400] (-) TimerEvent: {}
+[74.962805] (-) TimerEvent: {}
+[75.063224] (-) TimerEvent: {}
+[75.163633] (-) TimerEvent: {}
+[75.264139] (-) TimerEvent: {}
+[75.364540] (-) TimerEvent: {}
+[75.464781] (-) TimerEvent: {}
+[75.565055] (-) TimerEvent: {}
+[75.665349] (-) TimerEvent: {}
+[75.765649] (-) TimerEvent: {}
+[75.865979] (-) TimerEvent: {}
+[75.966352] (-) TimerEvent: {}
+[76.066670] (-) TimerEvent: {}
+[76.167050] (-) TimerEvent: {}
+[76.267453] (-) TimerEvent: {}
+[76.367840] (-) TimerEvent: {}
+[76.468295] (-) TimerEvent: {}
+[76.568654] (-) TimerEvent: {}
+[76.668959] (-) TimerEvent: {}
+[76.769241] (-) TimerEvent: {}
+[76.869648] (-) TimerEvent: {}
+[76.970033] (-) TimerEvent: {}
+[77.070343] (-) TimerEvent: {}
+[77.170664] (-) TimerEvent: {}
+[77.271023] (-) TimerEvent: {}
+[77.371409] (-) TimerEvent: {}
+[77.471772] (-) TimerEvent: {}
+[77.572225] (-) TimerEvent: {}
+[77.672574] (-) TimerEvent: {}
+[77.772886] (-) TimerEvent: {}
+[77.873286] (-) TimerEvent: {}
+[77.973635] (-) TimerEvent: {}
+[78.074026] (-) TimerEvent: {}
+[78.174412] (-) TimerEvent: {}
+[78.274711] (-) TimerEvent: {}
+[78.375009] (-) TimerEvent: {}
+[78.475366] (-) TimerEvent: {}
+[78.575755] (-) TimerEvent: {}
+[78.676054] (-) TimerEvent: {}
+[78.776362] (-) TimerEvent: {}
+[78.876663] (-) TimerEvent: {}
+[78.977044] (-) TimerEvent: {}
+[79.077462] (-) TimerEvent: {}
+[79.177760] (-) TimerEvent: {}
+[79.278140] (-) TimerEvent: {}
+[79.378546] (-) TimerEvent: {}
+[79.478864] (-) TimerEvent: {}
+[79.579247] (-) TimerEvent: {}
+[79.679650] (-) TimerEvent: {}
+[79.780068] (-) TimerEvent: {}
+[79.880404] (-) TimerEvent: {}
+[79.980776] (-) TimerEvent: {}
+[80.081172] (-) TimerEvent: {}
+[80.181565] (-) TimerEvent: {}
+[80.281995] (-) TimerEvent: {}
+[80.382335] (-) TimerEvent: {}
+[80.482705] (-) TimerEvent: {}
+[80.583162] (-) TimerEvent: {}
+[80.683458] (-) TimerEvent: {}
+[80.783761] (-) TimerEvent: {}
+[80.884029] (-) TimerEvent: {}
+[80.984411] (-) TimerEvent: {}
+[81.084716] (-) TimerEvent: {}
+[81.185074] (-) TimerEvent: {}
+[81.285396] (-) TimerEvent: {}
+[81.385790] (-) TimerEvent: {}
+[81.486223] (-) TimerEvent: {}
+[81.586619] (-) TimerEvent: {}
+[81.628916] (spinnaker_camera_driver) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libcamera_driver.so\x1b[0m\n'}
+[81.686780] (-) TimerEvent: {}
+[81.787145] (-) TimerEvent: {}
+[81.887521] (-) TimerEvent: {}
+[81.987928] (-) TimerEvent: {}
+[82.088291] (-) TimerEvent: {}
+[82.188639] (-) TimerEvent: {}
+[82.289018] (-) TimerEvent: {}
+[82.315686] (spinnaker_camera_driver) StdoutLine: {'line': b'[ 80%] Built target camera_driver\n'}
+[82.322203] (spinnaker_camera_driver) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/camera_driver_node.dir/src/camera_driver_node.cpp.o\x1b[0m\n'}
+[82.389194] (-) TimerEvent: {}
+[82.489499] (-) TimerEvent: {}
+[82.589812] (-) TimerEvent: {}
+[82.690226] (-) TimerEvent: {}
+[82.790547] (-) TimerEvent: {}
+[82.890851] (-) TimerEvent: {}
+[82.991198] (-) TimerEvent: {}
+[83.091512] (-) TimerEvent: {}
+[83.191818] (-) TimerEvent: {}
+[83.292195] (-) TimerEvent: {}
+[83.392545] (-) TimerEvent: {}
+[83.492853] (-) TimerEvent: {}
+[83.593182] (-) TimerEvent: {}
+[83.693621] (-) TimerEvent: {}
+[83.794086] (-) TimerEvent: {}
+[83.894453] (-) TimerEvent: {}
+[83.994810] (-) TimerEvent: {}
+[84.095209] (-) TimerEvent: {}
+[84.195673] (-) TimerEvent: {}
+[84.296146] (-) TimerEvent: {}
+[84.396466] (-) TimerEvent: {}
+[84.496763] (-) TimerEvent: {}
+[84.597108] (-) TimerEvent: {}
+[84.697541] (-) TimerEvent: {}
+[84.797856] (-) TimerEvent: {}
+[84.867280] (spinnaker_camera_driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable camera_driver_node\x1b[0m\n'}
+[84.897970] (-) TimerEvent: {}
+[84.998377] (-) TimerEvent: {}
+[85.067852] (spinnaker_camera_driver) StdoutLine: {'line': b'[100%] Built target camera_driver_node\n'}
+[85.071438] (spinnaker_camera_driver) CommandEnded: {'returncode': 0}
+[85.072027] (spinnaker_camera_driver) JobProgress: {'identifier': 'spinnaker_camera_driver', 'progress': 'install'}
+[85.072660] (spinnaker_camera_driver) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver'], 'cwd': '/home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'adwait'), ('GIT_ASKPASS', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/adwait'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-272f4eac-cdd5-418f-b098-0d1263343e37.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'adwait'), ('NAME', 'DESKTOP-34LQD19'), ('WSL_INTEROP', '/run/WSL/80285_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Incredibuild:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/adwai/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/adwai/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/adwai/.dotnet/tools:/mnt/c/Users/adwai/AppData/Local/GitHubDesktop/bin:/snap/bin:/home/adwait/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('ARENA_ROOT', '/opt/ArenaSDK_v0.1.68_Linux_x64/ArenaSDK_Linux_x64/'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6ee8dfea5a.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs:/opt/ros/humble')]), 'shell': False}
+[85.074646] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Install configuration: "RelWithDebInfo"\n'}
+[85.074744] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib\n'}
+[85.076671] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/flir-gentl\n'}
+[85.076775] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/flir-gentl/log4cpp.gentl.property\n'}
+[85.076805] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/flir-gentl/FLIR_GenTL.cti\n'}
+[85.078578] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinVideo.so.3\n'}
+[85.078679] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinnaker_C.so.3\n'}
+[85.078709] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinnaker_C.so\n'}
+[85.078734] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinVideo_C.so\n'}
+[85.078757] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinVideo_C.so.3\n'}
+[85.078779] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libXmlParser_gcc11_v3_0.so\n'}
+[85.079860] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinnaker_C.so.3.1.0.79\n'}
+[85.080917] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libGCBase_gcc11_v3_0.so\n'}
+[85.081139] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinVideo.so\n'}
+[85.081205] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libLog_gcc11_v3_0.so\n'}
+[85.081234] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinVideo.so.3.1.0.79\n'}
+[85.086500] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinnaker.so\n'}
+[85.086621] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/liblog4cpp_gcc11_v3_0.so\n'}
+[85.086794] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libNodeMapData_gcc11_v3_0.so\n'}
+[85.086880] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinVideo_C.so.3.1.0.79\n'}
+[85.087032] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinUpdate.so.3.1.0.79\n'}
+[85.088962] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libMathParser_gcc11_v3_0.so\n'}
+[85.089062] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinnaker.so.3.1.0.79\n'}
+[85.098558] (-) TimerEvent: {}
+[85.113321] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinnaker.so.3\n'}
+[85.113474] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinUpdate.so\n'}
+[85.113517] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libGenApi_gcc11_v3_0.so\n'}
+[85.116449] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinUpdate.so.3\n'}
+[85.116771] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/lib/spinnaker_camera_driver/camera_driver_node\n'}
+[85.117311] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/lib/spinnaker_camera_driver/camera_driver_node" to ""\n'}
+[85.117433] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/lib/libcamera_driver.so\n'}
+[85.126887] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/lib/libcamera_driver.so" to ""\n'}
+[85.127428] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/lib/cmake/spinnaker_camera_driver/spinnaker_camera_driverTargets.cmake\n'}
+[85.127531] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/lib/cmake/spinnaker_camera_driver/spinnaker_camera_driverTargets-relwithdebinfo.cmake\n'}
+[85.127565] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/lib/cmake/spinnaker_camera_driver/spinnaker_camera_driverConfig.cmake\n'}
+[85.127593] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/lib/cmake/spinnaker_camera_driver/spinnaker_camera_driverConfigVersion.cmake\n'}
+[85.127618] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/include\n'}
+[85.128369] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/include/spinnaker_camera_driver\n'}
+[85.128817] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/include/spinnaker_camera_driver/spinnaker_wrapper.hpp\n'}
+[85.128951] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/include/spinnaker_camera_driver/image.hpp\n'}
+[85.128998] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/include/spinnaker_camera_driver/synchronizer.hpp\n'}
+[85.129079] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/include/spinnaker_camera_driver/logging.hpp\n'}
+[85.129166] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/include/spinnaker_camera_driver/camera_driver.hpp\n'}
+[85.129195] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/include/spinnaker_camera_driver/pixel_format.hpp\n'}
+[85.129237] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/include/spinnaker_camera_driver/exposure_controller.hpp\n'}
+[85.129321] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/include/spinnaker_camera_driver/camera.hpp\n'}
+[85.129451] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config\n'}
+[85.129948] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config/flir_ax5.yaml\n'}
+[85.130292] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config/blackfly_s.yaml\n'}
+[85.130653] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config/grasshopper.yaml\n'}
+[85.130967] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config/chameleon.yaml\n'}
+[85.131232] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config/oryx.yaml\n'}
+[85.131499] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config/blackfly.yaml\n'}
+[85.131870] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver//launch\n'}
+[85.132357] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver//launch/multiple_cameras.launch.py\n'}
+[85.132628] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver//launch/driver_node.launch.py\n'}
+[85.132944] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/lib/spinnaker_camera_driver/linux_setup_flir\n'}
+[85.133917] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/ament_index/resource_index/package_run_dependencies/spinnaker_camera_driver\n'}
+[85.134040] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/ament_index/resource_index/parent_prefix_path/spinnaker_camera_driver\n'}
+[85.134404] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver/environment/ament_prefix_path.sh\n'}
+[85.134563] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver/environment/ament_prefix_path.dsv\n'}
+[85.134652] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver/environment/path.sh\n'}
+[85.134883] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver/environment/path.dsv\n'}
+[85.134979] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver/local_setup.bash\n'}
+[85.135010] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver/local_setup.sh\n'}
+[85.135036] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver/local_setup.zsh\n'}
+[85.135095] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver/local_setup.dsv\n'}
+[85.135182] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver/package.dsv\n'}
+[85.135355] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/ament_index/resource_index/packages/spinnaker_camera_driver\n'}
+[85.135476] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/ament_index/resource_index/rclcpp_components/spinnaker_camera_driver\n'}
+[85.135676] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver/cmake/spinnaker_camera_driverConfig.cmake\n'}
+[85.135723] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver/cmake/spinnaker_camera_driverConfig-version.cmake\n'}
+[85.135752] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver/package.xml\n'}
+[85.137007] (spinnaker_camera_driver) CommandEnded: {'returncode': 0}
+[85.149163] (spinnaker_camera_driver) JobEnded: {'identifier': 'spinnaker_camera_driver', 'rc': 0}
+[85.150169] (spinnaker_synchronized_camera_driver) JobStarted: {'identifier': 'spinnaker_synchronized_camera_driver'}
+[85.198696] (-) TimerEvent: {}
+[85.298985] (-) TimerEvent: {}
+[85.315476] (spinnaker_synchronized_camera_driver) JobProgress: {'identifier': 'spinnaker_synchronized_camera_driver', 'progress': 'cmake'}
+[85.316410] (spinnaker_synchronized_camera_driver) Command: {'cmd': ['/usr/local/bin/cmake', '/home/adwait/workspace/flir_camera_driver/spinnaker_synchronized_camera_driver', '-DCMAKE_INSTALL_PREFIX=/home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver'], 'cwd': '/home/adwait/workspace/flir_camera_driver/build/spinnaker_synchronized_camera_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'adwait'), ('GIT_ASKPASS', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/lib:/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/adwait'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-272f4eac-cdd5-418f-b098-0d1263343e37.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'adwait'), ('NAME', 'DESKTOP-34LQD19'), ('WSL_INTEROP', '/run/WSL/80285_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Incredibuild:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/adwai/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/adwai/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/adwai/.dotnet/tools:/mnt/c/Users/adwai/AppData/Local/GitHubDesktop/bin:/snap/bin:/home/adwait/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('ARENA_ROOT', '/opt/ArenaSDK_v0.1.68_Linux_x64/ArenaSDK_Linux_x64/'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6ee8dfea5a.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver:/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/adwait/workspace/flir_camera_driver/build/spinnaker_synchronized_camera_driver'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver:/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs:/opt/ros/humble')]), 'shell': False}
+[85.387994] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[85.399055] (-) TimerEvent: {}
+[85.499363] (-) TimerEvent: {}
+[85.599702] (-) TimerEvent: {}
+[85.700204] (-) TimerEvent: {}
+[85.800692] (-) TimerEvent: {}
+[85.817744] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[85.900801] (-) TimerEvent: {}
+[86.001287] (-) TimerEvent: {}
+[86.101744] (-) TimerEvent: {}
+[86.202208] (-) TimerEvent: {}
+[86.303000] (-) TimerEvent: {}
+[86.403510] (-) TimerEvent: {}
+[86.504128] (-) TimerEvent: {}
+[86.604765] (-) TimerEvent: {}
+[86.705443] (-) TimerEvent: {}
+[86.805917] (-) TimerEvent: {}
+[86.906365] (-) TimerEvent: {}
+[87.006830] (-) TimerEvent: {}
+[87.107303] (-) TimerEvent: {}
+[87.207678] (-) TimerEvent: {}
+[87.276459] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[87.307772] (-) TimerEvent: {}
+[87.408145] (-) TimerEvent: {}
+[87.508715] (-) TimerEvent: {}
+[87.609166] (-) TimerEvent: {}
+[87.631263] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[87.635571] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[87.637462] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[87.638499] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[87.642913] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[87.709361] (-) TimerEvent: {}
+[87.809810] (-) TimerEvent: {}
+[87.910313] (-) TimerEvent: {}
+[87.925230] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[87.931007] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[87.931236] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[87.931415] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[87.935420] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[88.004894] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[88.010416] (-) TimerEvent: {}
+[88.110690] (-) TimerEvent: {}
+[88.210998] (-) TimerEvent: {}
+[88.262787] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[88.265336] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[88.270495] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[88.277720] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[88.287765] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[88.311238] (-) TimerEvent: {}
+[88.313352] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[88.314638] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[88.411348] (-) TimerEvent: {}
+[88.511723] (-) TimerEvent: {}
+[88.612049] (-) TimerEvent: {}
+[88.712435] (-) TimerEvent: {}
+[88.812759] (-) TimerEvent: {}
+[88.913067] (-) TimerEvent: {}
+[89.013394] (-) TimerEvent: {}
+[89.113796] (-) TimerEvent: {}
+[89.214155] (-) TimerEvent: {}
+[89.314601] (-) TimerEvent: {}
+[89.414957] (-) TimerEvent: {}
+[89.450550] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[89.515058] (-) TimerEvent: {}
+[89.615291] (-) TimerEvent: {}
+[89.715525] (-) TimerEvent: {}
+[89.815799] (-) TimerEvent: {}
+[89.916096] (-) TimerEvent: {}
+[90.016529] (-) TimerEvent: {}
+[90.117088] (-) TimerEvent: {}
+[90.217392] (-) TimerEvent: {}
+[90.317701] (-) TimerEvent: {}
+[90.418006] (-) TimerEvent: {}
+[90.502366] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[90.518082] (-) TimerEvent: {}
+[90.618352] (-) TimerEvent: {}
+[90.718579] (-) TimerEvent: {}
+[90.818906] (-) TimerEvent: {}
+[90.919184] (-) TimerEvent: {}
+[91.019559] (-) TimerEvent: {}
+[91.119928] (-) TimerEvent: {}
+[91.220518] (-) TimerEvent: {}
+[91.320878] (-) TimerEvent: {}
+[91.421175] (-) TimerEvent: {}
+[91.521654] (-) TimerEvent: {}
+[91.622056] (-) TimerEvent: {}
+[91.722404] (-) TimerEvent: {}
+[91.822828] (-) TimerEvent: {}
+[91.923289] (-) TimerEvent: {}
+[92.023772] (-) TimerEvent: {}
+[92.124237] (-) TimerEvent: {}
+[92.224530] (-) TimerEvent: {}
+[92.324961] (-) TimerEvent: {}
+[92.425428] (-) TimerEvent: {}
+[92.525868] (-) TimerEvent: {}
+[92.626195] (-) TimerEvent: {}
+[92.726469] (-) TimerEvent: {}
+[92.826893] (-) TimerEvent: {}
+[92.927309] (-) TimerEvent: {}
+[93.027781] (-) TimerEvent: {}
+[93.128223] (-) TimerEvent: {}
+[93.228635] (-) TimerEvent: {}
+[93.328907] (-) TimerEvent: {}
+[93.429173] (-) TimerEvent: {}
+[93.478304] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[93.482588] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[93.529277] (-) TimerEvent: {}
+[93.547988] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[93.548766] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[93.578914] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.12 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[93.593939] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found camera_info_manager: 3.1.11 (/opt/ros/humble/share/camera_info_manager/cmake)\n'}
+[93.619654] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found image_transport: 3.1.11 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[93.629361] (-) TimerEvent: {}
+[93.729667] (-) TimerEvent: {}
+[93.830082] (-) TimerEvent: {}
+[93.930459] (-) TimerEvent: {}
+[94.030790] (-) TimerEvent: {}
+[94.131049] (-) TimerEvent: {}
+[94.231410] (-) TimerEvent: {}
+[94.331966] (-) TimerEvent: {}
+[94.432451] (-) TimerEvent: {}
+[94.533064] (-) TimerEvent: {}
+[94.633569] (-) TimerEvent: {}
+[94.734009] (-) TimerEvent: {}
+[94.783894] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found flir_camera_msgs: 2.0.8 (/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake)\n'}
+[94.793973] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[94.797439] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- \n'}
+[94.797598] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b' Properties for TARGET spinnaker_camera_driver::camera_driver:\n'}
+[94.797637] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'   spinnaker_camera_driver::camera_driver.INTERFACE_INCLUDE_DIRECTORIES = "/home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/include;/home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/include"\n'}
+[94.797666] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'\n'}
+[94.798880] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_copyright: 0.12.12 (/opt/ros/humble/share/ament_cmake_copyright/cmake)\n'}
+[94.799778] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.12.12 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)\n'}
+[94.800619] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.12.12 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)\n'}
+[94.801501] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.12.12 (/opt/ros/humble/share/ament_cmake_flake8/cmake)\n'}
+[94.802453] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_lint_cmake: 0.12.12 (/opt/ros/humble/share/ament_cmake_lint_cmake/cmake)\n'}
+[94.803325] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.12.12 (/opt/ros/humble/share/ament_cmake_pep257/cmake)\n'}
+[94.804163] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_clang_format: 0.12.12 (/opt/ros/humble/share/ament_cmake_clang_format/cmake)\n'}
+[94.805019] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_xmllint: 0.12.12 (/opt/ros/humble/share/ament_cmake_xmllint/cmake)\n'}
+[94.834125] (-) TimerEvent: {}
+[94.846056] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[94.858329] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Generating done\n'}
+[94.863819] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/adwait/workspace/flir_camera_driver/build/spinnaker_synchronized_camera_driver\n'}
+[94.870758] (spinnaker_synchronized_camera_driver) CommandEnded: {'returncode': 0}
+[94.871481] (spinnaker_synchronized_camera_driver) JobProgress: {'identifier': 'spinnaker_synchronized_camera_driver', 'progress': 'build'}
+[94.871829] (spinnaker_synchronized_camera_driver) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/adwait/workspace/flir_camera_driver/build/spinnaker_synchronized_camera_driver', '--', '-j20', '-l20'], 'cwd': '/home/adwait/workspace/flir_camera_driver/build/spinnaker_synchronized_camera_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'adwait'), ('GIT_ASKPASS', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/lib:/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/adwait'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-272f4eac-cdd5-418f-b098-0d1263343e37.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'adwait'), ('NAME', 'DESKTOP-34LQD19'), ('WSL_INTEROP', '/run/WSL/80285_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Incredibuild:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/adwai/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/adwai/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/adwai/.dotnet/tools:/mnt/c/Users/adwai/AppData/Local/GitHubDesktop/bin:/snap/bin:/home/adwait/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('ARENA_ROOT', '/opt/ArenaSDK_v0.1.68_Linux_x64/ArenaSDK_Linux_x64/'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6ee8dfea5a.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver:/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/adwait/workspace/flir_camera_driver/build/spinnaker_synchronized_camera_driver'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver:/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs:/opt/ros/humble')]), 'shell': False}
+[94.887993] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/synchronized_camera_driver.dir/src/synchronized_camera_driver.cpp.o\x1b[0m\n'}
+[94.888150] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/synchronized_camera_driver.dir/src/time_estimator.cpp.o\x1b[0m\n'}
+[94.888189] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/synchronized_camera_driver.dir/src/time_keeper.cpp.o\x1b[0m\n'}
+[94.888217] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/synchronized_camera_driver.dir/src/exposure_controller_factory.cpp.o\x1b[0m\n'}
+[94.888743] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/synchronized_camera_driver.dir/src/master_exposure_controller.cpp.o\x1b[0m\n'}
+[94.889009] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/synchronized_camera_driver.dir/src/follower_exposure_controller.cpp.o\x1b[0m\n'}
+[94.934235] (-) TimerEvent: {}
+[95.034486] (-) TimerEvent: {}
+[95.134774] (-) TimerEvent: {}
+[95.235071] (-) TimerEvent: {}
+[95.335437] (-) TimerEvent: {}
+[95.435841] (-) TimerEvent: {}
+[95.536140] (-) TimerEvent: {}
+[95.636473] (-) TimerEvent: {}
+[95.736730] (-) TimerEvent: {}
+[95.837083] (-) TimerEvent: {}
+[95.937386] (-) TimerEvent: {}
+[96.037708] (-) TimerEvent: {}
+[96.138051] (-) TimerEvent: {}
+[96.238355] (-) TimerEvent: {}
+[96.338823] (-) TimerEvent: {}
+[96.439262] (-) TimerEvent: {}
+[96.539697] (-) TimerEvent: {}
+[96.640137] (-) TimerEvent: {}
+[96.740543] (-) TimerEvent: {}
+[96.840951] (-) TimerEvent: {}
+[96.941333] (-) TimerEvent: {}
+[97.041792] (-) TimerEvent: {}
+[97.142107] (-) TimerEvent: {}
+[97.242438] (-) TimerEvent: {}
+[97.342802] (-) TimerEvent: {}
+[97.443180] (-) TimerEvent: {}
+[97.543501] (-) TimerEvent: {}
+[97.643818] (-) TimerEvent: {}
+[97.744188] (-) TimerEvent: {}
+[97.844558] (-) TimerEvent: {}
+[97.944830] (-) TimerEvent: {}
+[98.045084] (-) TimerEvent: {}
+[98.145337] (-) TimerEvent: {}
+[98.245625] (-) TimerEvent: {}
+[98.345965] (-) TimerEvent: {}
+[98.446263] (-) TimerEvent: {}
+[98.546671] (-) TimerEvent: {}
+[98.647048] (-) TimerEvent: {}
+[98.747398] (-) TimerEvent: {}
+[98.847862] (-) TimerEvent: {}
+[98.948169] (-) TimerEvent: {}
+[99.048472] (-) TimerEvent: {}
+[99.148857] (-) TimerEvent: {}
+[99.249232] (-) TimerEvent: {}
+[99.349582] (-) TimerEvent: {}
+[99.450008] (-) TimerEvent: {}
+[99.550350] (-) TimerEvent: {}
+[99.557856] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libsynchronized_camera_driver.so\x1b[0m\n'}
+[99.650453] (-) TimerEvent: {}
+[99.750767] (-) TimerEvent: {}
+[99.765192] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'[ 77%] Built target synchronized_camera_driver\n'}
+[99.772262] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object CMakeFiles/synchronized_camera_driver_node.dir/src/synchronized_camera_driver_node.cpp.o\x1b[0m\n'}
+[99.850974] (-) TimerEvent: {}
+[99.951284] (-) TimerEvent: {}
+[100.051675] (-) TimerEvent: {}
+[100.152022] (-) TimerEvent: {}
+[100.252453] (-) TimerEvent: {}
+[100.352702] (-) TimerEvent: {}
+[100.453043] (-) TimerEvent: {}
+[100.553355] (-) TimerEvent: {}
+[100.653741] (-) TimerEvent: {}
+[100.754105] (-) TimerEvent: {}
+[100.854398] (-) TimerEvent: {}
+[100.954690] (-) TimerEvent: {}
+[101.054986] (-) TimerEvent: {}
+[101.155280] (-) TimerEvent: {}
+[101.255620] (-) TimerEvent: {}
+[101.355962] (-) TimerEvent: {}
+[101.456465] (-) TimerEvent: {}
+[101.556823] (-) TimerEvent: {}
+[101.657115] (-) TimerEvent: {}
+[101.757564] (-) TimerEvent: {}
+[101.857959] (-) TimerEvent: {}
+[101.958339] (-) TimerEvent: {}
+[102.058783] (-) TimerEvent: {}
+[102.159202] (-) TimerEvent: {}
+[102.211130] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable synchronized_camera_driver_node\x1b[0m\n'}
+[102.259353] (-) TimerEvent: {}
+[102.359806] (-) TimerEvent: {}
+[102.460300] (-) TimerEvent: {}
+[102.560853] (-) TimerEvent: {}
+[102.661235] (-) TimerEvent: {}
+[102.730840] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'[100%] Built target synchronized_camera_driver_node\n'}
+[102.734219] (spinnaker_synchronized_camera_driver) CommandEnded: {'returncode': 0}
+[102.734759] (spinnaker_synchronized_camera_driver) JobProgress: {'identifier': 'spinnaker_synchronized_camera_driver', 'progress': 'install'}
+[102.735368] (spinnaker_synchronized_camera_driver) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/adwait/workspace/flir_camera_driver/build/spinnaker_synchronized_camera_driver'], 'cwd': '/home/adwait/workspace/flir_camera_driver/build/spinnaker_synchronized_camera_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'adwait'), ('GIT_ASKPASS', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/lib:/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/adwait'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-272f4eac-cdd5-418f-b098-0d1263343e37.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'adwait'), ('NAME', 'DESKTOP-34LQD19'), ('WSL_INTEROP', '/run/WSL/80285_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/adwait/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Incredibuild:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/adwai/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/adwai/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/adwai/.dotnet/tools:/mnt/c/Users/adwai/AppData/Local/GitHubDesktop/bin:/snap/bin:/home/adwait/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('ARENA_ROOT', '/opt/ArenaSDK_v0.1.68_Linux_x64/ArenaSDK_Linux_x64/'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6ee8dfea5a.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver:/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/adwait/workspace/flir_camera_driver/build/spinnaker_synchronized_camera_driver'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver:/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs:/opt/ros/humble')]), 'shell': False}
+[102.737170] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Install configuration: "RelWithDebInfo"\n'}
+[102.737526] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver/lib/spinnaker_synchronized_camera_driver/synchronized_camera_driver_node\n'}
+[102.738054] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver/lib/spinnaker_synchronized_camera_driver/synchronized_camera_driver_node" to ""\n'}
+[102.738183] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver/lib/libsynchronized_camera_driver.so\n'}
+[102.741266] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver/lib/libsynchronized_camera_driver.so" to ""\n'}
+[102.741365] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver//launch\n'}
+[102.742512] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver//launch/primary_secondary.launch.py\n'}
+[102.742929] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver//launch/master_example.launch.py\n'}
+[102.743402] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver//launch/follower_example.launch.py\n'}
+[102.744093] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver/share/ament_index/resource_index/package_run_dependencies/spinnaker_synchronized_camera_driver\n'}
+[102.744300] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver/share/ament_index/resource_index/parent_prefix_path/spinnaker_synchronized_camera_driver\n'}
+[102.744555] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/environment/ament_prefix_path.sh\n'}
+[102.744673] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/environment/ament_prefix_path.dsv\n'}
+[102.744759] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/environment/path.sh\n'}
+[102.744843] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/environment/path.dsv\n'}
+[102.745053] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/local_setup.bash\n'}
+[102.745151] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/local_setup.sh\n'}
+[102.745240] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/local_setup.zsh\n'}
+[102.745324] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/local_setup.dsv\n'}
+[102.745406] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/package.dsv\n'}
+[102.745488] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver/share/ament_index/resource_index/packages/spinnaker_synchronized_camera_driver\n'}
+[102.745704] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver/share/ament_index/resource_index/rclcpp_components/spinnaker_synchronized_camera_driver\n'}
+[102.745769] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/cmake/spinnaker_synchronized_camera_driverConfig.cmake\n'}
+[102.745857] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/cmake/spinnaker_synchronized_camera_driverConfig-version.cmake\n'}
+[102.746241] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/package.xml\n'}
+[102.746938] (spinnaker_synchronized_camera_driver) CommandEnded: {'returncode': 0}
+[102.755604] (spinnaker_synchronized_camera_driver) JobEnded: {'identifier': 'spinnaker_synchronized_camera_driver', 'rc': 0}
+[102.756401] (-) EventReactorShutdown: {}

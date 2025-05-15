@@ -1,0 +1,2 @@
+Invoking command in '/home/adwait/workspace/flir_camera_driver/build/flir_camera_description': /usr/local/bin/cmake /home/adwait/workspace/flir_camera_driver/flir_camera_description -DCMAKE_INSTALL_PREFIX=/home/adwait/workspace/flir_camera_driver/install/flir_camera_description
+Invoked command in '/home/adwait/workspace/flir_camera_driver/build/flir_camera_description' returned '1': /usr/local/bin/cmake /home/adwait/workspace/flir_camera_driver/flir_camera_description -DCMAKE_INSTALL_PREFIX=/home/adwait/workspace/flir_camera_driver/install/flir_camera_description

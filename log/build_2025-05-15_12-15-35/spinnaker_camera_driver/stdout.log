@@ -1,0 +1,174 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found inc dir: SPINNAKER_INCLUDE_DIRS-NOTFOUND
+-- Found variable: FALSE at SPINNAKER_LIBRARIES-NOTFOUND and SPINNAKER_INCLUDE_DIRS-NOTFOUND
+-- spinnaker not found
+-- libSpinnaker not found in system library path
+-- Running download_spinnaker script with arguments: x86_64 /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/usr/lib jammy
+-- PROCESS RESULT: CPU architecture is %s x86_64
+OS code name is %s jammy
+Destination folder is %s /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/usr/lib
+Downloading SDK archive from https://packages.clearpathrobotics.com/stable/flir/Spinnaker/Ubuntu22.04/spinnaker-3.1.0.79-Ubuntu22.04-amd64-pkg.tar.gz...
+Unpacking tarball.
+Unpacking debs.
+Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/libspinnaker-dev_3.1.0.79_amd64.deb
+Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/spinview-qt_3.1.0.79_amd64.deb
+Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/libspinvideo-c-dev_3.1.0.79_amd64.deb
+Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/libgentl_3.1.0.79_amd64.deb
+Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/libspinnaker-c-dev_3.1.0.79_amd64.deb
+Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/libspinvideo_3.1.0.79_amd64.deb
+Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/spinnaker_3.1.0.79_amd64.deb
+Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/libspinnaker_3.1.0.79_amd64.deb
+Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/spinupdate_3.1.0.79_amd64.deb
+Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/spinupdate-dev_3.1.0.79_amd64.deb
+Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/spinnaker-doc_3.1.0.79_amd64.deb
+Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/libspinvideo-c_3.1.0.79_amd64.deb
+Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/libspinnaker-c_3.1.0.79_amd64.deb
+Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/libspinvideo-dev_3.1.0.79_amd64.deb
+Extracting /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/spinnaker-3.1.0.79-amd64/spinview-qt-dev_3.1.0.79_amd64.deb
+Copying libraries to /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/usr/lib
+Copying: libSpinnaker_C.so.3
+Copying: libSpinnaker_C.so
+Copying: libSpinnaker_C.so.3.1.0.79
+Copying: libSpinnaker.so
+Copying: libSpinnaker.so.3.1.0.79
+Copying: libSpinnaker.so.3
+Copying: libGCBase_gcc11_v3_0.so
+Copying: libGenApi_gcc11_v3_0.so
+Copying: libXmlParser_gcc11_v3_0.so
+Copying: libMathParser_gcc11_v3_0.so
+Copying: libLog_gcc11_v3_0.so
+Copying: libNodeMapData_gcc11_v3_0.so
+
+-- libSpinnaker library location: /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/usr/lib/libSpinnaker.so
+-- libSpinnaker include location: /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/opt/spinnaker/include
+-- Found inc dir: /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/opt/spinnaker/include
+-- Found SPINNAKER: /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/opt/spinnaker/include  
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found rclcpp_components: 16.0.12 (/opt/ros/humble/share/rclcpp_components/cmake)
+-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found camera_info_manager: 3.1.11 (/opt/ros/humble/share/camera_info_manager/cmake)
+-- Found image_transport: 3.1.11 (/opt/ros/humble/share/image_transport/cmake)
+-- Found flir_camera_msgs: 2.0.8 (/home/adwait/workspace/flir_camera_driver/install/flir_camera_msgs/share/flir_camera_msgs/cmake)
+-- installing spinnaker libraries from /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver/opt/spinnaker/lib
+-- Found ament_cmake_copyright: 0.12.12 (/opt/ros/humble/share/ament_cmake_copyright/cmake)
+-- Found ament_cmake_cppcheck: 0.12.12 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+-- Found ament_cmake_cpplint: 0.12.12 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+-- Found ament_cmake_flake8: 0.12.12 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+-- Found ament_cmake_lint_cmake: 0.12.12 (/opt/ros/humble/share/ament_cmake_lint_cmake/cmake)
+-- Found ament_cmake_pep257: 0.12.12 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+-- Found ament_cmake_clang_format: 0.12.12 (/opt/ros/humble/share/ament_cmake_clang_format/cmake)
+-- Found ament_cmake_xmllint: 0.12.12 (/opt/ros/humble/share/ament_cmake_xmllint/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/adwait/workspace/flir_camera_driver/build/spinnaker_camera_driver
+[ 20%] [32mBuilding CXX object CMakeFiles/camera_driver.dir/src/camera.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/camera_driver.dir/src/spinnaker_wrapper.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/camera_driver.dir/src/pixel_format.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/camera_driver.dir/src/spinnaker_wrapper_impl.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/camera_driver.dir/src/genicam_utils.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/camera_driver.dir/src/image.cpp.o[0m
+[ 80%] [32m[1mLinking CXX shared library libcamera_driver.so[0m
+[ 80%] Built target camera_driver
+[ 90%] [32mBuilding CXX object CMakeFiles/camera_driver_node.dir/src/camera_driver_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable camera_driver_node[0m
+[100%] Built target camera_driver_node
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/flir-gentl
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/flir-gentl/log4cpp.gentl.property
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/flir-gentl/FLIR_GenTL.cti
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinVideo.so.3
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinnaker_C.so.3
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinnaker_C.so
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinVideo_C.so
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinVideo_C.so.3
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libXmlParser_gcc11_v3_0.so
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinnaker_C.so.3.1.0.79
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libGCBase_gcc11_v3_0.so
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinVideo.so
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libLog_gcc11_v3_0.so
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinVideo.so.3.1.0.79
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinnaker.so
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/liblog4cpp_gcc11_v3_0.so
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libNodeMapData_gcc11_v3_0.so
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinVideo_C.so.3.1.0.79
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinUpdate.so.3.1.0.79
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libMathParser_gcc11_v3_0.so
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinnaker.so.3.1.0.79
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinnaker.so.3
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinUpdate.so
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libGenApi_gcc11_v3_0.so
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/./lib/libSpinUpdate.so.3
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/lib/spinnaker_camera_driver/camera_driver_node
+-- Set runtime path of "/home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/lib/spinnaker_camera_driver/camera_driver_node" to ""
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/lib/libcamera_driver.so
+-- Set runtime path of "/home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/lib/libcamera_driver.so" to ""
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/lib/cmake/spinnaker_camera_driver/spinnaker_camera_driverTargets.cmake
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/lib/cmake/spinnaker_camera_driver/spinnaker_camera_driverTargets-relwithdebinfo.cmake
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/lib/cmake/spinnaker_camera_driver/spinnaker_camera_driverConfig.cmake
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/lib/cmake/spinnaker_camera_driver/spinnaker_camera_driverConfigVersion.cmake
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/include
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/include/spinnaker_camera_driver
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/include/spinnaker_camera_driver/spinnaker_wrapper.hpp
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/include/spinnaker_camera_driver/image.hpp
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/include/spinnaker_camera_driver/synchronizer.hpp
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/include/spinnaker_camera_driver/logging.hpp
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/include/spinnaker_camera_driver/camera_driver.hpp
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/include/spinnaker_camera_driver/pixel_format.hpp
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/include/spinnaker_camera_driver/exposure_controller.hpp
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/include/spinnaker_camera_driver/camera.hpp
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config/flir_ax5.yaml
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config/blackfly_s.yaml
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config/grasshopper.yaml
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config/chameleon.yaml
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config/oryx.yaml
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config/blackfly.yaml
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver//launch
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver//launch/multiple_cameras.launch.py
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver//launch/driver_node.launch.py
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/lib/spinnaker_camera_driver/linux_setup_flir
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/ament_index/resource_index/package_run_dependencies/spinnaker_camera_driver
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/ament_index/resource_index/parent_prefix_path/spinnaker_camera_driver
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver/environment/ament_prefix_path.sh
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver/environment/ament_prefix_path.dsv
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver/environment/path.sh
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver/environment/path.dsv
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver/local_setup.bash
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver/local_setup.sh
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver/local_setup.zsh
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver/local_setup.dsv
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver/package.dsv
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/ament_index/resource_index/packages/spinnaker_camera_driver
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/ament_index/resource_index/rclcpp_components/spinnaker_camera_driver
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver/cmake/spinnaker_camera_driverConfig.cmake
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver/cmake/spinnaker_camera_driverConfig-version.cmake
+-- Installing: /home/adwait/workspace/flir_camera_driver/install/spinnaker_camera_driver/share/spinnaker_camera_driver/package.xml

@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-724a5cb39629323ece0b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "flir_camera_msgs__py",
+					"jsonFile" : "directory-flir_camera_msgs__py-de02b5f06094a7d6a553.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/adwait/workspace/flir_camera_driver/build/flir_camera_msgs/flir_camera_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "flir_camera_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_flir_camera_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_flir_camera_msgs_egg-e5b42628397b3f790d7b.json",
+					"name" : "ament_cmake_python_build_flir_camera_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_flir_camera_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_flir_camera_msgs-1f3775e54f5d618fe4fe.json",
+					"name" : "ament_cmake_python_copy_flir_camera_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "flir_camera_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-flir_camera_msgs-02a4115380d8704bed97.json",
+					"name" : "flir_camera_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "flir_camera_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-flir_camera_msgs__cpp-f80063c44e9f8867a247.json",
+					"name" : "flir_camera_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "flir_camera_msgs__py::@17d789fa157b61c250ab",
+					"jsonFile" : "target-flir_camera_msgs__py-ae1a1f0b78da0b5a8f83.json",
+					"name" : "flir_camera_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "flir_camera_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-flir_camera_msgs__rosidl_generator_c-0638e13b22660b9260e4.json",
+					"name" : "flir_camera_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "flir_camera_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-flir_camera_msgs__rosidl_generator_py-da733ec979ae5fd22bb6.json",
+					"name" : "flir_camera_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "flir_camera_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-flir_camera_msgs__rosidl_typesupport_c-14ec2e62ecdfb081fdaa.json",
+					"name" : "flir_camera_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "flir_camera_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-flir_camera_msgs__rosidl_typesupport_c__pyext-8c4aff5fa1ef46bce15e.json",
+					"name" : "flir_camera_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "flir_camera_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-flir_camera_msgs__rosidl_typesupport_cpp-0861f25ec678ac034a2b.json",
+					"name" : "flir_camera_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "flir_camera_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-flir_camera_msgs__rosidl_typesupport_fastrtps_c-b061dad430052e7a70cd.json",
+					"name" : "flir_camera_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "flir_camera_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-flir_camera_msgs__rosidl_typesupport_fastrtps_c__pyext-afe1335121dbd049f83f.json",
+					"name" : "flir_camera_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "flir_camera_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-flir_camera_msgs__rosidl_typesupport_fastrtps_cpp-c3d92ebfefc500bd33b9.json",
+					"name" : "flir_camera_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "flir_camera_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-flir_camera_msgs__rosidl_typesupport_introspection_c-102004c982cde2b1e37b.json",
+					"name" : "flir_camera_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "flir_camera_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-flir_camera_msgs__rosidl_typesupport_introspection_c__pyext-8f0b981aa67c70055e33.json",
+					"name" : "flir_camera_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "flir_camera_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-flir_camera_msgs__rosidl_typesupport_introspection_cpp-9cceedafb3f3dc8380e2.json",
+					"name" : "flir_camera_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "flir_camera_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-flir_camera_msgs_uninstall-beb5ed2aef33e8e27cda.json",
+					"name" : "flir_camera_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-bedf69f332cfb2af94d1.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/adwait/workspace/flir_camera_driver/build/flir_camera_msgs",
+		"source" : "/home/adwait/workspace/flir_camera_driver/flir_camera_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
